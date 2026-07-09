@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="container">
+  {{ if .Params.showToc | default true }}
+  <div class="page page--with-toc">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+    {{ if .TableOfContents }}
+    <aside class="page__toc">
+      <h3>On this page</h3>
+      {{ .TableOfContents }}
+    </aside>
+    {{ end }}
+  </div>
+  {{ else }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}
