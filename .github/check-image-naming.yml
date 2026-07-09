@@ -1,0 +1,56 @@
+name: Enforce image naming convention
+
+on:
+  pull_request:
+    paths:
+      - 'static/images/**/*.png'
+      - 'static/images/**/*.jpg'
+      - 'static/images/**/*.jpeg'
+
+jobs:
+  check-image-names:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Check image naming convention
+        run: |
+          BANNED_WORDS="image|img|screenshot|screen|shot|pic|photo|untitled|new"
+          ALLOWED_TYPES="diagram|flow|chart|map|table|overview|architecture|pipeline|workflow|ui|mockup|wireframe|example|comparison|timeline|structure|layout|preview|config|setup"
+
+          FAIL=0
+          shopt -s nullglob
+
+          mapfile -t files < <(
+            git diff --name-only --diff-filter=A origin/main...HEAD |
+            grep -E '^static/images/.*\.(png|jpg|jpeg)$' || true
+          )
+
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No new images in static/images/ — nothing to check."
+            exit 0
+          fi
+
+          for file in "${files[@]}"; do
+            filename=$(basename "$file")
+            name_only="${filename%.*}"
+
+            if echo "$name_only" | grep -Eiq "$BANNED_WORDS"; then
+              echo "FAIL: $file — avoid generic words (image, screenshot, photo, untitled, etc.)"
+              FAIL=1
+              continue
+            fi
+
+            if [[ ! "$filename" =~ ^[a-z0-9]+(-[a-z0-9]+)+-($ALLOWED_TYPES)\.(png|jpg|jpeg)$ ]]; then
+              echo "FAIL: $file — use topic-context-type.ext (e.g. git-workflow-diagram.png)"
+              echo "      Allowed types: diagram, flow, chart, overview, ui, structure, ..."
+              FAIL=1
+            else
+              echo "PASS: $file"
+            fi
+          done
+
+          exit "$FAIL"
