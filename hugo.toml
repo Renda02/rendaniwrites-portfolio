@@ -17,32 +17,27 @@ title = 'Rendani Luvhengo'
 
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
-  [[menu.main]]
     identifier = "work"
     name = "Work"
     url = "/work/"
-    weight = 3
+    weight = 1
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
-    weight = 4
+    weight = 2
   [[menu.main]]
     identifier = "api"
     name = "API"
     url = "/api/"
-    weight = 5
+    weight = 3
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
     url = "/projects/"
-    weight = 6
+    weight = 4
+
+[[redirects]]
+from = '/about/'
+to = '/'
+status = 301

@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="site-header__inner">
-    <a href="{{ "/" | relURL }}" class="site-header__brand">{{ site.Params.firstName | default "Rendani" }}</a>
+    <a href="{{ "/" | relURL }}" class="site-header__brand{{ if .IsHome }} is-active{{ end }}">{{ site.Params.firstName | default "Rendani" }}</a>
     <nav class="site-header__nav" aria-label="Main navigation">
       {{ range site.Menus.main }}
         <a href="{{ .URL | relURL }}" class="site-header__link{{ if $.IsMenuCurrent "main" . }} is-active{{ end }}">{{ .Name }}</a>
