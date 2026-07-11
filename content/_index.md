@@ -7,7 +7,7 @@ I build infrastructure, process, and pipelines that scale, for both people and t
 
 I started in Quality Management Systems, where I learned how to turn unstructured process into something people could rely on. I carried that same instinct into documentation.
 
-In my first role as a technical writer, I became solo within three weeks, owning and maintaining the documentation lifecycle within a CI/CD pipeline in an agile environment.
+In my first role as a technical writer, I became solo within 3 weeks. I owned and maintained the documentation lifecycle within a continuous integration and deployment(CI/CD) pipeline in an agile environment.
 
 In my current role, I joined during a team restructuring and ended up owning the docs platform end to end, training the team along the way.
 
@@ -26,5 +26,4 @@ I enjoy reading books, hanging out with my daughter, and picking up embroidery. 
 
 ## Connect
 
-- [LinkedIn](https://www.linkedin.com/in/rendani-luvhengo/)
-- [GitHub](https://github.com/Renda02)
+{{< connect >}}

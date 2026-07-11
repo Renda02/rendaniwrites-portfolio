@@ -1,10 +1,20 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a href="{{ "/" | relURL }}" class="site-header__brand{{ if .IsHome }} is-active{{ end }}">{{ site.Params.firstName | default "Rendani" }}</a>
-    <nav class="site-header__nav" aria-label="Main navigation">
+    <button type="button" class="site-header__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span class="site-header__toggle-bar"></span>
+      <span class="site-header__toggle-bar"></span>
+      <span class="site-header__toggle-bar"></span>
+    </button>
+    <nav id="primary-nav" class="site-header__nav" aria-label="Main navigation">
       {{ range site.Menus.main }}
         <a href="{{ .URL | relURL }}" class="site-header__link{{ if $.IsMenuCurrent "main" . }} is-active{{ end }}">{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>
 </header>
+
+{{ with resources.Get "js/nav.js" }}
+  {{ $js := . | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}
