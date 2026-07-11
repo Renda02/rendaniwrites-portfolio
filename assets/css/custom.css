@@ -137,6 +137,22 @@ main {
   }
 }
 
+/* === API page notice === */
+.api-notice {
+  max-width: var(--page-max-width);
+  margin: 1.5rem auto 0;
+  padding: 0.9rem var(--page-padding-x);
+  background: #fff8e6;
+  border: 1px solid #f0d999;
+  border-left: 4px solid #d9a441;
+  color: #6b4f11;
+  font-size: 0.95rem;
+}
+
+.api-notice p {
+  margin: 0.25rem 0 0;
+}
+
 /* === Footer === */
 .site-footer {
   background: var(--color-footer-bg);
