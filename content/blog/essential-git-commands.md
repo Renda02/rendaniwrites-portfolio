@@ -5,13 +5,13 @@ description: "The daily Git workflow and commands I learned through trial, error
 tags: ["git", "version-control", "workflow"]
 ---
 
-In my previous role as a solo tech writer for a fintech company, we worked entirely in docs-as-code, documenting everything using code workflows from Visual Studio Code. As someone who used to fear the terminal, I made a choice to use only the terminal and become proficient in git commands, even if it meant breaking things.
+In my previous role as a solo tech writer for a fintech company, we worked entirely in docs-as-code. We documented everything using code workflows from Visual Studio Code. As someone who used to fear the terminal, I chose to use only the terminal. I wanted to become proficient in git commands, even if it meant breaking things.
 
-And yes, I broke things. A lot.
+And yes, I broke things a lot.
 
-Lucky for me, I had a developer who became my go-to lifeline: Javier. Every time I broke something (which was frequently), he'd patiently walk me through the fix. Those messy days and his patience taught me more than any tutorial ever could. I went from avoiding the command line to embracing it, mistakes and all.
+Lucky for me, I had a developer who became my go-to person for anything Git-related: Javier. Every time I broke something (which was frequently), he'd patiently walk me through the fix. Those messy days and his patience taught me more than any tutorial ever could. I went from avoiding the command line to embracing it, mistakes and all.
 
-Here's my Git flow and the commands that became part of my daily workflow. The ones I learned through trial, error, and a very patient developer.
+Here's my Git flow and the commands that became part of my daily workflow. These are the ones I learned through trial, error, and a very patient mentor.
 
 ---
 
@@ -36,7 +36,7 @@ Running `git pull` before creating a new branch ensures you're branching off the
 $ git checkout -b feature/update-api-docs
 ```
 
-One feature, one branch. Keeps work organized and makes switching tasks easier.
+One feature, one branch. It keeps work organized and makes switching tasks easier.
 
 ### 4. Make your changes, then stage and commit
 ```bash
@@ -52,17 +52,7 @@ $ git push  # subsequent pushes
 
 Then open a pull request for the team to review.
 
-### 6. Use stash when switching tasks mid-work
-
-Sometimes I'd be halfway through something and need to switch branches. Instead of committing half-baked changes, I stashed them:
-```bash
-$ git stash           # save current changes temporarily
-$ git checkout other-branch # switch branches
-$ git stash pop       # bring changes back later
-```
-Think of this as my "pause and come back later" button.
-
-### 7. Clean up after merge
+### 6. Clean up after merge
 ```bash
 $ git checkout main
 $ git pull  # get merged changes
@@ -71,20 +61,33 @@ $ git branch -d feature/update-api-docs  # delete local branch
 
 ---
 
-These seven workflow steps became my daily rhythm.
+These 6 steps became my daily rhythm. But work doesn't always move in a straight line, and one habit outside the sequence made all the difference.
 
-## The core commands I used daily:
+## When you need to switch branches mid-change
 
-- `git branch` – Create, list, and delete branches (separate workspaces for different features)
-- `git checkout` – Switch between branches
-- `git add` – Stage changes for commit (mark files ready to save)
-- `git commit` – Save changes to the local repository (your computer's version)
-- `git push` – Upload local commits to a remote repository (share with the team)
-- `git status` – Check what's staged, unstaged, and which branch I'm on
-- `git stash` / `git stash pop` – Temporarily save and retrieve work in progress
-- `git checkout --` – Discard unstaged changes
-- `git commit --amend --no-edit` – Update the last commit without changing the message
-- `git clone` – Create a local copy of a remote repository (the main project stored online)
+Say you're halfway through documenting a new API endpoint when a teammate asks you to fix a typo on a page that's already live. You don't want to commit half-finished work just to switch branches, and you don't want to lose it either.
+
+Or say you've started changes on a branch and need to leave it before they're ready to commit, maybe to check out a different branch or review someone else's work.
+
+The scenario I run into most often: I start making changes before realizing I'm still on `main`, or on an old branch I meant to leave behind. Stash lets me save the work, switch to (or create) the right branch, and bring the changes back without losing anything.
+
+This is where stash comes in:
+```bash
+$ git stash           # save current changes temporarily
+$ git checkout other-branch # switch branches
+$ git stash pop       # bring changes back later
+```
+Think of this as my "pause and come back later" button. It's not part of the sequence above. It's the habit I reach for whenever work gets interrupted.
+
+---
+
+## Two more commands that came in handy
+
+Beyond the steps above, 2 commands became part of my regular toolkit.
+
+`git checkout --` discards unstaged changes on a file. If I'd made a mess of edits I didn't want to keep, this reverted the file to its last committed state.
+
+`git commit --amend --no-edit` updates the last commit instead of creating a new one, without changing the commit message. Instead of piling up small "fix typo" or "forgot a file" commits, I could fold the fix into the commit it belonged to and keep a clean, focused history. More on how I actually used this below.
 
 ---
 
@@ -93,8 +96,8 @@ These seven workflow steps became my daily rhythm.
 As I started committing more frequently, a pattern appeared. I'd make a commit… and then immediately realize:
 
 - I'd missed a file
-- there was a small typo
-- there was one more change I meant to include
+- I'd made a small typo
+- I'd left out a change
 
 That's when Javier introduced me to a simple but powerful command: `git commit --amend`
 

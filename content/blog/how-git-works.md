@@ -1,13 +1,4 @@
----
-date: 2025-01-31
-title: "How Git works: Understanding the workflow behind the commands"
-description: "Understanding the four locations where Git stores your changes, and why that makes the commands finally make sense."
-tags: ["git", "version-control"]
----
-
-Did you know that Git stores your changes in four different locations, not two? Understanding this workflow is key to making Git commands finally make sense.
-
-Let's talk about how Git actually works.
+Did you know that Git stores your changes in 4 different locations, not two? Understanding this workflow is key to making Git commands finally make sense.
 
 ## What is Git?
 
@@ -15,7 +6,7 @@ Git is a version control system that helps you track changes and manage your fil
 
 If you're working in docs-as-code, Git is how you manage your documentation the same way developers manage code.
 
-So where do your changes actually live in Git? Git has 4 locations where your changes can exist: three on your local machine (working directory, staging area, local repository) and one remote (the shared repository).
+So where do your changes actually live in Git? Git has 4 locations where your changes can exist: 3 on your local machine (working directory, staging area, local repository) and 1 remote (the shared repository).
 
 ![Git workflow diagram showing four stages](/images/git-four-locations-diagram.png)
 
@@ -31,9 +22,9 @@ So where do your changes actually live in Git? Git has 4 locations where your ch
 When you're working on your files:
 
 1. You edit files in your **working directory**
-2. `git add` changes move to **staging area**
-3. `git commit` changes are saved to your **local repository**
-4. `git push` changes are uploaded to the **remote repository**
+2. `git add` moves changes to the **staging area**
+3. `git commit` saves changes to your **local repository**
+4. `git push` uploads changes to the **remote repository**
 
 Once I understood this workflow, commands finally made sense:
 
@@ -48,4 +39,4 @@ Once I understood this workflow, commands finally made sense:
 
 Once you understand the workflow, the commands make sense. And once the commands make sense, you can work confidently in any environment.
 
-Ready to put this into practice? Check out my post on [Git commands I use daily](/blog/essential-git-commands) where I share the workflow and commands I learned through trial, error, and a very patient colleague.
+Ready to put this into practice? Check out my post on [Git commands I use daily](/blog/essential-git-commands) where I share the workflow and commands I learned through trial, error, and a very patient mentor.
