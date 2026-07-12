@@ -17,7 +17,7 @@ If you're working in docs-as-code, Git is how you manage your documentation the 
 
 So where do your changes actually live in Git? Git has 4 locations where your changes can exist: three on your local machine (working directory, staging area, local repository) and one remote (the shared repository).
 
-![Git workflow diagram showing four stages](/images/git-flow.png)
+![Git workflow diagram showing four stages](/images/git-four-locations-diagram.png)
 
 ## How Git maintains the 4 locations
 
