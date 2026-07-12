@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ if .Pages }}
+  <ul class="blog-list">
+    {{ range .Pages }}
+    <li class="blog-entry">
+      <a href="{{ .RelPermalink }}" class="blog-entry__title">{{ .Title }}</a>
+      {{ if not .Date.IsZero }}
+      <p class="blog-entry__meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
+      {{ end }}
+      {{ with .Plain }}<p class="blog-entry__excerpt">{{ . | truncate 200 }}</p>{{ end }}
+      <a href="{{ .RelPermalink }}" class="blog-entry__read-more">Read more &rarr;</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end }}

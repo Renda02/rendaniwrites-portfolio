@@ -21,6 +21,7 @@ I ended up staying for a year in that role and learned so much. But what also he
 
 ## From panic to my biggest shift
 
+Sometimes the best growth happens when you have no choice but to figure it out. Being thrown into the deep end taught me to build relationships fast, use community wisdom, trust that I could handle more than I thought possible, and approach complex challenges at work with curiosity.
 What started as chaos became my biggest shift. There are lots of people I can give shoutouts to:
 
 - Francesca Cook, who took a chance on me
@@ -29,4 +30,4 @@ What started as chaos became my biggest shift. There are lots of people I can gi
 
 ---
 
-Sometimes the best growth happens when you have no choice but to figure it out. Being thrown into the deep end taught me to build relationships fast, use community wisdom, trust that I could handle more than I thought possible, and approach complex challenges at work with curiosity.
+

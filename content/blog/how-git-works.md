@@ -1,3 +1,10 @@
+---
+date: 2025-01-31
+title: "How Git works: Understanding the workflow behind the commands"
+description: "Understanding the four locations where Git stores your changes, and why that makes the commands finally make sense."
+tags: ["git", "version-control"]
+---
+
 Did you know that Git stores your changes in 4 different locations, not two? Understanding this workflow is key to making Git commands finally make sense.
 
 ## What is Git?
