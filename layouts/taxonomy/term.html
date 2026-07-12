@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="container">
-  <h1>{{ .Title }}</h1>
+  <h1>{{ replace .Data.Term "-" " " | strings.FirstUpper }}</h1>
   {{ .Content }}
   {{ partial "entry-list.html" . }}
 </div>

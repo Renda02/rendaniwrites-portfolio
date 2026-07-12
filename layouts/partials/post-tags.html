@@ -1,0 +1,7 @@
+{{ with .Params.tags }}
+<ul class="post-tags">
+  {{ range . }}
+  <li><a href="/tags/{{ . | urlize }}/" class="post-tags__link">{{ replace . "-" " " | strings.FirstUpper }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}

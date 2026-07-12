@@ -5,6 +5,7 @@
     <article>
       <h1>{{ .Title }}</h1>
       {{ .Content }}
+      {{ partial "post-tags.html" . }}
     </article>
     {{ if .TableOfContents }}
     <aside class="page__toc">
@@ -17,6 +18,7 @@
   <article>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    {{ partial "post-tags.html" . }}
   </article>
   {{ end }}
 </div>
