@@ -365,17 +365,6 @@ main {
   margin: 0 0 0.5rem;
 }
 
-.blog-entry__read-more {
-  color: var(--color-accent);
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.blog-entry__read-more:hover {
-  text-decoration: underline;
-}
-
 /* === Post tags === */
 .post-tags {
   list-style: none;
