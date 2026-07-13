@@ -1,5 +1,5 @@
 ---
-date: 2025-01-05
+date: 2026-01-05
 title: "Git commands I use daily: From terminal fear to confident workflows"
 description: "The daily Git workflow and commands I learned through trial, error, and a very patient developer."
 tags: ["git", "version-control", "workflow"]

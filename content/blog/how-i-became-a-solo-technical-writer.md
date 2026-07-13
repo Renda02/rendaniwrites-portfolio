@@ -1,5 +1,5 @@
 ---
-date: 2025-01-11
+date: 2026-01-11
 title: "How I became a solo technical writer"
 description: "How a manager's departure on day one turned into my biggest career lesson."
 tags: ["career", "technical-writing"]
