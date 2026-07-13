@@ -1,0 +1,20 @@
+name: Stale PR notice
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # every Monday at 9am
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-pr-stale: 14
+          days-before-pr-close: -1
+          stale-pr-message: "This PR has been open for 14+ days with no activity."
+          stale-pr-label: stale
+          days-before-issue-stale: -1
+          days-before-issue-close: -1

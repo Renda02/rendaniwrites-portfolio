@@ -1,0 +1,17 @@
+name: Auto-update PR branches
+on:
+  push:
+    branches: [main]
+
+jobs:
+  autoupdate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: wechuli/pull-request-updater@v2
+        with:
+          base: main
+          token: ${{ secrets.GITHUB_TOKEN }}
