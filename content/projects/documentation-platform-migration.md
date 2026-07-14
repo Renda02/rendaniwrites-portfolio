@@ -4,13 +4,17 @@ description: "Learn more about how I led a team of 7 people through a documentat
 tags: ["documentation", "migration"]
 ---
 
-Learn more about how I led a team of 7 people through a documentation platform migration with zero breaking changes.
-
 ## Background
 
-I joined the company during a restructuring. The documentation team was merging the technical writing and training teams into one. Within 4 months, 2 of our technical writers left the organization, one of whom had been leading the migration. I was assigned to take over: moving 4,000-5,000 pages of product, security, and restricted documentation onto one platform, designing a new pipeline from scratch, and establishing new ways of working between docs, the Product Manager (PM), and engineering.
+I joined the company during a restructuring. The documentation team was merging the technical writing and training teams into one. 4 months into my new role, 2 of our technical writers left the organization. One of them had been leading the migration.
 
-This was my first time leading a documentation platform migration. I joined after the authoring tool had already been selected, so choosing the tool wasn't part of my job.
+I was then assigned to lead the migration. This meant:
+
+* Moving 4,000 to 5,000 pages of product documentation onto one platform with zero breaking changes
+* Designing a new pipeline from scratch
+* Establishing new ways of working between docs, the product manager, and engineering
+
+This was my first time leading a documentation platform migration.
 
 ---
 
@@ -26,11 +30,12 @@ This was my first time leading a documentation platform migration. I joined afte
 - Move to one platform instead of several, with writing, maintaining, and publishing happening in the same place
 - Make documentation easy to find, and reduce the cognitive load on users from moving between tools when searching for information
 
+
 ---
 
 ## Getting oriented: scoping the migration
 
-My first job wasn't choosing the tool. It was learning it fast enough to lead everyone else through it. I split my time between learning the new tool and auditing our existing documentation and migration requirements, since I needed both to plan the work.
+I joined after the team had already selected the authoring tool, so choosing the tool wasn't part of my job. It was learning it fast enough to lead everyone else through it. I split my time between learning the new tool and auditing our existing documentation and migration requirements, since I needed both to plan the work.
 
 Learning the tool also meant understanding where the team could locally maintain, write, and collaborate day to day, not just what the tool technically supported.
 

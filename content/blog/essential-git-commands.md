@@ -81,17 +81,13 @@ Think of this as my "pause and come back later" button. It's not part of the seq
 
 ---
 
-## Two more commands that came in handy
-
-Beyond the steps above, 2 commands became part of my regular toolkit.
+## One more command that came in handy
 
 `git checkout --` discards unstaged changes on a file. If I'd made a mess of edits I didn't want to keep, this reverted the file to its last committed state.
 
-`git commit --amend --no-edit` updates the last commit instead of creating a new one, without changing the commit message. Instead of piling up small "fix typo" or "forgot a file" commits, I could fold the fix into the commit it belonged to and keep a clean, focused history. More on how I actually used this below.
-
 ---
 
-## Another tip from Javier included:
+## A tip from Javier: keeping commit history clean
 
 As I started committing more frequently, a pattern appeared. I'd make a commit… and then immediately realize:
 
@@ -103,14 +99,14 @@ That's when Javier introduced me to a simple but powerful command: `git commit -
 
 Instead of creating extra "fix" commits for tiny adjustments, I could update the previous commit and keep my history clean.
 
-Why this worked so well for me
+Why this worked so well for me:
 
 - it kept my commit history tidy and focused
 - I didn't have to learn more complex tools right away
 - it helped me think in terms of complete changes, not fragments
 - it removed one more thing to worry about before merging
 
-When to use `--amend`
+When to use `--amend`:
 
 - you're still working on the same logical change
 - you haven't pushed the commit to the remote yet
