@@ -22,12 +22,14 @@ I ended up staying for a year in that role and learned so much. But what also he
 ## From panic to my biggest shift
 
 Sometimes the best growth happens when you have no choice but to figure it out. Being thrown into the deep end taught me to build relationships fast, use community wisdom, trust that I could handle more than I thought possible, and approach complex challenges at work with curiosity.
-What started as chaos became my biggest shift. There are lots of people I can give shoutouts to:
 
-- Francesca Cook, who took a chance on me
-- Kiko and his QA team, who made it all easy for me to catch up
-- Kat Stoica Ostenfeld and Rachel Rigdon, fellow technical writers who shared tips on how to navigate my journey
+That started with:
 
----
+- Francesca Cook, who took a chance on me and hired me for my first technical role
+- Marco Moreno Lopez and the QA team, who made the ramp-up easy
+- Kat Stoica Ostenfeld and Rachel Rigdon, who shared the tips that got me through it
+
+What started as chaos became my biggest shift.
+
 
 
