@@ -23,7 +23,7 @@ title = 'Rendani Luvhengo'
     weight = 1
   [[menu.main]]
     identifier = "work"
-    name = "Work"
+    name = "Resume"
     url = "/work/"
     weight = 2
   [[menu.main]]
@@ -33,7 +33,7 @@ title = 'Rendani Luvhengo'
     weight = 3
   [[menu.main]]
     identifier = "api"
-    name = "API"
+    name = "API sample"
     url = "/api/"
     weight = 4
   [[menu.main]]
