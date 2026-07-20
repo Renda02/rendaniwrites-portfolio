@@ -1,5 +1,5 @@
 ---
-title: "Work"
+title: "Resume"
 description: "Experience and career history."
 ---
 
