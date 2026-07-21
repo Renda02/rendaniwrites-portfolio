@@ -4,8 +4,8 @@
   <div class="page page--with-toc">
     <article>
       <h1>{{ .Title }}</h1>
-      {{ .Content }}
       {{ partial "post-tags.html" . }}
+      {{ .Content }}
     </article>
     {{ if .TableOfContents }}
     <aside class="page__toc">
