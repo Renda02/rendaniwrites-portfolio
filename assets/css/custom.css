@@ -1,10 +1,10 @@
 :root {
   --color-nav-bg: #f1f1f3;
   --color-nav-text: #111111;
-  --color-footer-bg: #0a0a0a;
-  --color-accent: #2f8455;
-  --color-footer-text: #e5e5e5;
-  --color-footer-muted: #a3a3a3;
+  --color-footer-bg: #f1f1f3;
+  --color-accent: #1c5335;
+  --color-footer-text: #111111;
+  --color-footer-muted: #4d4d4d;
   --page-max-width: 1200px;
   --page-padding-x: 2rem;
 }
@@ -255,8 +255,8 @@ main {
 .site-footer {
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.75rem;
   flex-shrink: 0;
 }
 
@@ -322,8 +322,6 @@ main {
 
 .site-footer__bottom {
   margin-top: 0.5rem;
-  padding-top: 0.5rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
   font-weight: 300;
   color: var(--color-footer-muted);
   font-size: 0.85rem;
@@ -359,7 +357,7 @@ main {
 }
 
 .blog-entry__meta {
-  color: #6b6b6b;
+  color: var(--color-footer-muted);
   font-size: 0.85rem;
   margin: 0.25rem 0 0.5rem;
 }
@@ -417,7 +415,7 @@ main {
 }
 
 .tag-list__count {
-  color: #6b6b6b;
+  color: var(--color-footer-muted);
   font-size: 0.85rem;
 }
 
