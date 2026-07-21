@@ -93,6 +93,31 @@ main {
   border-radius: 8px;
 }
 
+/* === Content tables === */
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.container th,
+.container td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.container th {
+  background: var(--color-nav-bg);
+  font-weight: 700;
+}
+
+.container tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
 /* === Header / nav === */
 .site-header {
   background: var(--color-nav-bg);
