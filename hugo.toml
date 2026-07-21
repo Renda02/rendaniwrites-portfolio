@@ -8,7 +8,7 @@ title = 'Rendani Luvhengo'
   description = "Welcome to my personal website."
   email = "rluvhengo2@gmail.com"
   linkedin = "https://www.linkedin.com/in/rendani-luvhengo/"
-  github = "https://github.com/Renda02/rendaniwrites-portfolio"
+  github = "https://github.com/Renda02"
 
 [markup]
   [markup.goldmark]
