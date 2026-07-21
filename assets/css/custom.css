@@ -145,6 +145,7 @@ main {
 
 .site-header__nav {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
