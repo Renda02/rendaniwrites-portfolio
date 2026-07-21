@@ -9,8 +9,10 @@
     </article>
     {{ if .TableOfContents }}
     <aside class="page__toc">
-      <h3>On this page</h3>
-      {{ .TableOfContents }}
+      <div class="page__toc-inner">
+        <h3>On this page</h3>
+        {{ .TableOfContents }}
+      </div>
     </aside>
     {{ end }}
   </div>
