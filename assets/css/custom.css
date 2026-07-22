@@ -3,11 +3,10 @@
   --color-text: #171717;
   --color-nav-bg: #f1f1f3;
   --color-nav-text: #111111;
-  --color-footer-bg: #0a0a0a;
-  --color-accent: #2f8455;
-  --color-footer-text: #e5e5e5;
-  --color-footer-muted: #a3a3a3;
-  --color-muted: #6b6b6b;
+  --color-footer-bg: #f1f1f3;
+  --color-accent: #1c5335;
+  --color-footer-text: #111111;
+  --color-footer-muted: #4d4d4d;
   --color-border: rgba(0,0,0,0.08);
   --color-notice-bg: #fff8e6;
   --color-notice-border: #f0d999;
@@ -22,8 +21,10 @@
   --color-text: #e5e5e5;
   --color-nav-bg: #1a1a1a;
   --color-nav-text: #f1f1f3;
+  --color-footer-bg: var(--color-nav-bg);
+  --color-footer-text: var(--color-nav-text);
   --color-accent: #4caf7d;
-  --color-muted: #a3a3a3;
+  --color-footer-muted: #a3a3a3;
   --color-border: rgba(255,255,255,0.1);
   --color-notice-bg: #2a2410;
   --color-notice-border: #5c4d1a;
@@ -117,11 +118,39 @@ main {
   border-radius: 8px;
 }
 
+/* === Content tables === */
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.container th,
+.container td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.container th {
+  background: var(--color-nav-bg);
+  font-weight: 700;
+}
+
+.container tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
 /* === Header / nav === */
 .site-header {
   background: var(--color-nav-bg);
   border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-header__inner {
@@ -248,6 +277,13 @@ main {
   font-size: 0.9rem;
 }
 
+.page__toc-inner {
+  position: sticky;
+  top: 5rem;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+}
+
 .page__toc h3 {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -280,6 +316,11 @@ main {
   .page--with-toc {
     grid-template-columns: 1fr;
   }
+
+  .page__toc-inner {
+    position: static;
+    max-height: none;
+  }
 }
 
 /* === API page notice === */
@@ -302,8 +343,8 @@ main {
 .site-footer {
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.75rem;
   flex-shrink: 0;
 }
 
@@ -369,8 +410,6 @@ main {
 
 .site-footer__bottom {
   margin-top: 0.5rem;
-  padding-top: 0.5rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
   font-weight: 300;
   color: var(--color-footer-muted);
   font-size: 0.85rem;
@@ -406,7 +445,7 @@ main {
 }
 
 .blog-entry__meta {
-  color: var(--color-muted);
+  color: var(--color-footer-muted);
   font-size: 0.85rem;
   margin: 0.25rem 0 0.5rem;
 }
@@ -419,7 +458,7 @@ main {
 .post-tags {
   list-style: none;
   padding: 0;
-  margin: 2rem 0 0;
+  margin: 0 0 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -464,7 +503,7 @@ main {
 }
 
 .tag-list__count {
-  color: var(--color-muted);
+  color: var(--color-footer-muted);
   font-size: 0.85rem;
 }
 
