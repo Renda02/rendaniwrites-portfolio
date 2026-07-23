@@ -4,60 +4,42 @@ Companion to `../SKILL.md`. Mechanical rules live in Vale (`.vale.ini` + `styles
 
 ## Source priority
 
-1. This user's personal overrides (`styles/Portfolio/*.yml`) — highest priority, override Google where they conflict.
-2. This site's adopted deviations from Google, filtered to what's portfolio-relevant (encoded into `styles/Portfolio/`: em dash ban, "e.g." comma placement, contraction preference, single quotes in front matter).
-3. Google developer documentation style guide (`developers.google.com/style/*`) — default base, verify live rather than from memory.
+This site no longer depends on Vale's Google package at all — `.vale.ini` is just `BasedOnStyles = Portfolio`, and `styles/` only contains `styles/Portfolio/`. This was a deliberate simplification, not an oversight: `vale-cli/vale-action` fetches the full ~31-rule Google package fresh at CI runtime regardless of what's committed locally, so relying on Google's package while trying to exclude most of it turned into a real bug (`Google.FirstPerson`/`Google.We` flooded a real PR with dozens of results even after their files were deleted locally). Rather than keep fighting that, everything worth keeping was copied into `styles/Portfolio/` as permanent, frozen rule files, and the Google dependency was dropped entirely.
+
+1. This user's personal overrides — everything in `styles/Portfolio/*.yml` is now the entire rule set, no priority conflicts to resolve against an external package anymore.
+2. Google developer documentation style guide (`developers.google.com/style/*`) — still the default reference for *judgment calls* the skill makes (verify live rather than from memory), just no longer a live Vale dependency.
 
 **Explicitly not adopted** (specific to product/API documentation, not portfolio-relevant): the "[condition], email the X team at \<address\>" support lead-in pattern; "via" restricted to "via our API"; error-message double-quote formatting convention; UI-element sentence-case rule (revisit only if a blog post ever walks through a specific tool's UI).
 
-**Google rules excluded (deleted from `styles/Google/`, not merely disabled in `.vale.ini`), and why:**
+**A separate, fuller Vale-on-Google setup is a distinct future project**, not part of this portfolio — worth building for professional technical-writing work (e.g. a work-report or client-facing docs repo) where the full ~31-rule Google package would genuinely apply, rather than fighting it down to a handful of rules like this personal site needed.
 
-| Rule | Why excluded |
-|---|---|
-| `EmDash` | Superseded by `Portfolio.EmDash` (total ban vs. Google's spacing-only check) |
-| `FirstPerson`, `We` | This site is intentionally first-person narrative ("I led," "we migrated") — these rules assume neutral product docs addressing "you" |
-| `Headings` | Superseded by `Portfolio.Headings` (adds "Git"/"Hugo"/"GitHub"/"Vale"/"I" exceptions, found missing when it flagged a real heading) |
-| `Exclamation` | False-positived on a proper noun ("Aha!", a tool name) at error level |
-| `Parens` | Too noisy for resume-style parentheticals |
-| `WordList` | Too pedantic for informal personal prose (flagged "CLI," "admin") |
-| `Colons` | Every real hit was a proper noun (company names) after a colon, never a real error |
-| `Latin` | Contradicts `Portfolio.EgUsage` — this site keeps "e.g."/"i.e." as a deliberate deviation from Google, whose rule wanted to replace them |
-| `AMPM`, `DateFormat`, `Ellipses` | No relevance to this site's writing (no time-of-day mentions, no slash-dates, ellipses may suit an informal aside) — pure error-level downside, never fired |
-| `OptionalPlurals`, `LyHyphens`, `Ranges`, `Units` | Zero hits and no tie to any decision actually made for this site — generic Google defaults, not needed right away |
-| `OxfordComma` | Regex heuristic can't distinguish a real list from an idiom ("mistakes and all") — its only real-content hit was a false positive |
+**Vendored from Google, now permanent `styles/Portfolio/` copies (the only ones that ever fired on real content):**
 
-**Google rules kept (currently in `styles/Google/`), and why:**
-
-| Rule | Why kept |
+| Rule | Why it earned a spot |
 |---|---|
 | `Acronyms` | Flags acronyms used without a spelled-out first-use form; caught real cases ("SSO", "REST") |
-| `Contractions` | Suggests contractions ("do not" → "don't") — matches this site's informal, conversational voice |
-| `Gender`, `GenderBias` | Flags outdated binary/gendered constructs ("he/she", "mailman") — zero current relevance, but values-based and zero-conflict |
-| `HeadingPunctuation` | No period at end of a heading — directly matches AGENTS.md's own existing rule |
-| `Ordinal` | Spell out ordinals ("first," not "1st") in prose |
-| `Passive` | Suggests active voice; matches this site's preference |
-| `Periods` | No periods in acronyms/initialisms (e.g. not "U.S.A.") |
-| `Quotes` | American convention: commas/periods inside quotation marks |
-| `Semicolons` | Suggests reviewing every semicolon — see the soft preference under Hybrid judgment below |
-| `Slang` | Flags internet slang (tl;dr, imo, fwiw) — named by the user as worth keeping |
-| `Spacing` | Single space after sentence-ending punctuation — named by the user as worth keeping |
-| `Spelling` | American spelling (colour → color) — matches this site's American English convention |
-| `Will` | Avoid "will" in prose — matches this site's preference |
+| `Passive` | Suggests active voice; caught 8 real instances across the case study and blog posts |
+| `Contractions` | Suggests contractions ("do not" → "don't") — matches this site's informal, conversational voice; caught 1 real instance. Uses a shorter swap list than Google's original (missing "what is," "how is," "they are," "we are," "we have," "were not," "when is," "where is") — a deliberate choice to keep the original shorter list rather than Google's fuller one. |
+| `Periods` | No periods in acronyms/initialisms (e.g. not "U.S.A.") — added preemptively alongside the proven three, hasn't fired yet |
+
+Everything else Google's package offered (`Gender`, `GenderBias`, `HeadingPunctuation`, `Ordinal`, `Quotes`, `Semicolons`, `Slang`, `Spacing`, `Spelling`, and the ~17 rules already excluded before the full drop — `EmDash`, `FirstPerson`, `We`, `Headings`, `Exclamation`, `Parens`, `WordList`, `Colons`, `Latin`, `AMPM`, `DateFormat`, `Ellipses`, `OptionalPlurals`, `LyHyphens`, `Ranges`, `Units`, `OxfordComma`) was dropped rather than migrated — none had fired on real content, and migrating unproven rules "just in case" was exactly the kind of shiny-over-useful tooling this project is trying to avoid. Add more from Google's package later, one at a time, only once something real demonstrates the need.
 
 ## What Vale already owns (don't re-derive by hand)
 
-Run `vale <file>` and fix what it reports before doing any judgment-level work. Covered mechanically:
-em dashes · ampersands · corporate jargon ("reach out," "circle back," "touch base," "leverage") · "allow" vs. "let" · "e.g." comma placement · contractions (this site prefers them — informal, conversational voice) · acronym-used-without-definition, both Google's built-in 3-5-letter-cap check and this site's `Portfolio.Abbreviations` conditional rule for lowercase shortenings like "infra" · heading sentence case (`Portfolio.Headings`, `warning` level — proper nouns like Git/Hugo/GitHub/Vale and the pronoun "I" are exempted, but person names will still need review since they can't be pre-listed) · "docs" vs. "documentation" (`Portfolio.DocsTerminology`, `suggestion` level — flags every instance for manual review, never auto-replaces, since informal "docs team" is fine but narrative prose sometimes reads better as "documentation") · passive voice · nominalizations (flagged, not auto-fixed — see Hybrid below) · semicolons (flagged for review, not banned — see Hybrid below).
+Run `vale <file>` and fix what it reports before doing any judgment-level work. Covered mechanically, all via `styles/Portfolio/`:
+em dashes · ampersands · corporate jargon ("reach out," "circle back," "touch base," "leverage") · "allow" vs. "let" · "e.g." comma placement · contractions (this site prefers them — informal, conversational voice) · acronym-used-without-definition (`Portfolio.Acronyms` for 3-5 letter caps, `Portfolio.Abbreviations` for lowercase shortenings like "infra") · heading sentence case (`Portfolio.Headings`, `warning` level — proper nouns like Git/Hugo/GitHub/Vale/API/Crowdin/Stoplight, the pronoun "I," and known names like "Javier" are exempted, but new person names will still need review since they can't be pre-listed) · "docs" vs. "documentation" (`Portfolio.DocsTerminology`, `suggestion` level — flags every instance for manual review, never auto-replaces, since informal "docs team" is fine but narrative prose sometimes reads better as "documentation") · passive voice · no periods in acronyms.
 
-## Hybrid judgment (Vale flags, this skill decides)
+## Hybrid judgment (a fixed rule exists, but applying it needs judgment)
 
-- **Semicolons.** Vale's `Google.Semicolons` rule suggests reviewing every semicolon ("use judiciously"). This site's preference: default to splitting into two sentences unless the two clauses are tightly parallel and a semicolon genuinely reads better than a period. Never use a semicolon to join anything that isn't two independent clauses.
-- **Nominalizations.** Google's Vale style flags common noun-of-a-verb constructions ("made the decision" → "decided"). Rewriting still needs judgment on how the sentence flows afterward.
-- **Numbered vs. bulleted lists.** Numbered only when order matters (a process/sequence); bulleted otherwise. Vale can't judge whether a given list is order-dependent.
-- **List parallelism.** Items in one list should be grammatically and conceptually parallel (all gerund-led, all fragments, etc.). This is a semantic/grammatical judgment, not a regex match.
-- **Numbers — the "scannable stat" exception.** Vale's baseline (via Google's style) spells out zero through nine and uses numerals for 10+. Override: any number functioning as a scannable stat or metric — team size, page counts, results, percentages, the kind featured in a `description` field or a "Key results" list — always uses numerals, regardless of magnitude ("a 7-person team," not "a seven-person team"). Ordinary narrative numbers still follow Vale's baseline.
+Not Vale-flagged anymore (no `Google.Semicolons`/nominalizations rule is vendored), but these are still fixed preferences, not open judgment calls — the "hybrid" part is applying the rule correctly, not deciding whether it applies:
 
-## Skill-only judgment (Vale cannot do this at all)
+- **Semicolons.** Default to splitting into two sentences unless the two clauses are tightly parallel and a semicolon genuinely reads better than a period. Never use a semicolon to join anything that isn't two independent clauses.
+- **Nominalizations.** Watch for noun-of-a-verb constructions ("made the decision" → "decided") and rewrite them — judgment is in how the resulting sentence flows, not whether to do it.
+- **Numbered vs. bulleted lists.** Numbered only when order matters (a process/sequence); bulleted otherwise — requires judging whether a given list is actually order-dependent.
+- **List parallelism.** Items in one list should be grammatically and conceptually parallel (all gerund-led, all fragments, etc.) — a semantic/grammatical judgment, not a regex match.
+- **Numbers — the "scannable stat" exception.** Default: spell out zero through nine, numerals for 10+. Override: any number functioning as a scannable stat or metric — team size, page counts, results, percentages, the kind featured in a `description` field or a "Key results" list — always uses numerals, regardless of magnitude ("a 7-person team," not "a seven-person team"). Ordinary narrative numbers follow the default.
+
+## Skill-only judgment (no fixed rule at all, pure context)
 
 - **Site-wide terminology and language consistency (primary).** Before or after editing any file, check how the same term, tool, or concept is described elsewhere on the site — not just within the file being edited. Examples: is "infra" always expanded the same way on first use across pages, not just on the one page being edited? Does one project call it "product manager (PM)" while another spells it differently? Is the voice/tone consistent between the resume's achievement bullets and a case study's narrative, allowing for the genre difference between the two? Vale checks a single file in isolation; only this skill compares across files.
 - **Cross-document redundancy.** Scan the rest of the page (and sibling files in the same content section) for a claim or phrase restated in two places — a smell worth flagging, not necessarily auto-deleting.
