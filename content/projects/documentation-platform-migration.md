@@ -43,7 +43,7 @@ This scoping work surfaced the real shape of what needed to happen:
 - The new tool didn't support some formatting the old tool did, like merging tables, so some content needed updates before it could move over
 - 600 redirects needed mapping so links didn't break
 - New domain structures needed alignment
-- Engineering support was needed to build the pipeline, and infra approval was needed before we could migrate
+- The pipeline needed engineering support, and the migration needed infra approval
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: portfolio-writing-style
+name: style-check
 description: Writing/editing judgment for anything under content/ (blog, projects, resume) that Vale's CI linting can't catch — site-wide terminology/language consistency, redundancy, structural consistency, tag synthesis, audience-targeted copy.
 ---
 
