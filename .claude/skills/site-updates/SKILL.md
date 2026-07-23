@@ -1,6 +1,6 @@
 ---
 name: site-updates
-description: Append a reader-facing "what's new" summary to the repo's CHANGELOG.md, built from recent git history. Groups changes by reader interest (new posts, new projects, site improvements), not by commit author or software version. Not published on the live site.
+description: Append a "what's new" entry to CHANGELOG.md from recent git history, grouped by reader interest (posts, projects, site improvements) instead of commit type. Not published on the live site.
 ---
 
 ## Purpose
