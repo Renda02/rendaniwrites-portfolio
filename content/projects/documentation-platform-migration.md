@@ -30,7 +30,6 @@ This was my first time leading a documentation platform migration.
 - Move to one platform instead of several, with writing, maintaining, and publishing happening in the same place
 - Make documentation easy to find, and reduce the cognitive load on users from moving between tools when searching for information
 
-
 ---
 
 ## Getting oriented: scoping the migration
@@ -118,9 +117,8 @@ Beyond individual workstreams, I made sure the team had a shared way of working.
 - Documentation became easier to find, with everything now searchable in one place instead of split across systems
 - Defined a new docs lifecycle and process for the team, still in use 2+ years on
 - Zero breaking changes across 4,000+ pages at launch, despite 600 redirects
-- Trained and onboarded 22+ PMs onto self-serve authoring, now an active, adopted workflow, not just a plan
+- Trained and onboarded 22+ PMs onto self-serve authoring, now an active, adopted workflow
 - Gained page-level feedback from readers, helping identify unclear documentation directly from user input
-- Reused the infrastructure for a later localization project with zero process changes
 
 ---
 
@@ -143,6 +141,4 @@ Looking back, there are 2 things I'd change:
 
 **Engage document owners like legal earlier and directly.** When I joined, I didn't fully understand that legal's documentation, specifically links tied to contracts, carried different stakes than general documentation. This is the same legal redirect issue mentioned earlier: I fixed it fast, but I'd rather have prevented it. If I'd built a direct line with legal from day one, instead of treating their content the same as everything else, we could have avoided the 3 contract links breaking after launch, rather than resolving it reactively within 24 hours.
 
-**Involve engineering and infra earlier, during tool evaluation.** This one wasn't fully mine to control, since I joined after the tool had already been selected. But looking at how the migration unfolded, I believe the org would have benefited from bringing engineering and infra in during the tool evaluation itself. They're the ones who ask questions you wouldn't think to ask yourself, simply because you don't know what you don't know until you're the one depending on the tool's constraints.
-
-Zero breaking changes mattered because the documentation served clients directly, and any breakage would have hurt their ability to find and search the information they depend on.
+**Involve engineering and infra earlier, during tool evaluation.** I joined after the team had already selected the tool. I believe involving engineering earlier could have helped surface its limitations sooner. It also would have helped us understand how much support we'd need from them during migration.
