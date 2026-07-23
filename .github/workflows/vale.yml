@@ -24,6 +24,6 @@ jobs:
         with:
           files: '["content"]'
           reporter: github-pr-check
-          fail_on_error: true
+          fail_on_error: false
           filter_mode: added
           token: ${{ secrets.GITHUB_TOKEN }}

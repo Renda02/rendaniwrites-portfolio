@@ -26,7 +26,9 @@ Everything else Google's package offered (`Gender`, `GenderBias`, `HeadingPunctu
 
 ## What Vale already owns (don't re-derive by hand)
 
-Run `vale <file>` and fix what it reports before doing any judgment-level work. Covered mechanically, all via `styles/Portfolio/`:
+Run `vale <file>` and fix what it reports before doing any judgment-level work. **CI is advisory, not a gate** — `.github/workflows/vale.yml` runs with `fail_on_error: false`, so Vale always comments/annotates PRs with everything it finds (including `error`-level rules like `EmDash`, `Ampersand`, `Periods`), but never blocks a merge. This is a personal portfolio, not a team docs pipeline; nothing here needs a hard gate.
+
+Covered mechanically, all via `styles/Portfolio/`:
 em dashes · ampersands · corporate jargon ("reach out," "circle back," "touch base," "leverage") · "allow" vs. "let" · "e.g." comma placement · contractions (this site prefers them — informal, conversational voice) · acronym-used-without-definition (`Portfolio.Acronyms` for 3-5 letter caps, `Portfolio.Abbreviations` for lowercase shortenings like "infra") · heading sentence case (`Portfolio.Headings`, `warning` level — proper nouns like Git/Hugo/GitHub/Vale/API/Crowdin/Stoplight, the pronoun "I," and known names like "Javier" are exempted, but new person names will still need review since they can't be pre-listed) · "docs" vs. "documentation" (`Portfolio.DocsTerminology`, `suggestion` level — flags every instance for manual review, never auto-replaces, since informal "docs team" is fine but narrative prose sometimes reads better as "documentation") · passive voice · no periods in acronyms.
 
 ## Hybrid judgment (a fixed rule exists, but applying it needs judgment)
