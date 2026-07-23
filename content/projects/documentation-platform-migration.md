@@ -1,7 +1,7 @@
 ---
 title: "Documentation platform migration"
-description: "Learn more about how I led a team of 7 people through a documentation platform migration with zero breaking changes."
-tags: ["documentation", "migration"]
+description: "Took over a documentation platform migration, leading a 7-person team to zero breaking changes across 4,000+ pages."
+tags: ["documentation", "migration", "leadership", "stakeholder-management", "risk-management"]
 ---
 
 ## Background
@@ -12,7 +12,7 @@ I was then assigned to lead the migration. This meant:
 
 * Moving 4,000 to 5,000 pages of product documentation onto one platform with zero breaking changes
 * Designing a new pipeline from scratch
-* Establishing new ways of working between docs, the product manager, and engineering
+* Establishing new ways of working between docs, the product manager (PM), and engineering
 
 This was my first time leading a documentation platform migration.
 
@@ -20,12 +20,14 @@ This was my first time leading a documentation platform migration.
 
 ## What we were solving for
 
-**The problem:**
+### The problem
+
 - Documentation was split across disconnected tools: written and maintained in wiki pages, published separately through a publishing tool, with other content stored separately in version control
-- Because these tools weren't linked, clients had to search across separate systems to find information, and splitting documentation across different platforms made it harder to find what they needed
+- Because these tools weren't linked, customers had to search across separate systems to find information, and splitting documentation across different platforms made it harder to find what they needed
 - PM and engineering worked from different spaces with different tool constraints, which slowed collaboration
 
-**What we were aiming for:**
+### What we were aiming for
+
 - Streamline collaboration between PM and the docs team, letting PMs contribute directly through the authoring tool, with the docs team reviewing
 - Move to one platform instead of several, with writing, maintaining, and publishing happening in the same place
 - Make documentation easy to find, and reduce the cognitive load on users from moving between tools when searching for information
@@ -42,7 +44,7 @@ This scoping work surfaced the real shape of what needed to happen:
 - The new tool didn't support some formatting the old tool did, like merging tables, so some content needed updates before it could move over
 - 600 redirects needed mapping so links didn't break
 - New domain structures needed alignment
-- Engineering support was needed to build the pipeline, and infra approval was needed before we could migrate
+- Engineering support was needed to build the pipeline, and infrastructure (infra) approval was needed before we could migrate
 
 ---
 
@@ -75,7 +77,7 @@ I believe in bringing docs allies in early rather than presenting a finished pla
 - A wiki-based one-pager tracking migration progress, accessible to anyone in the org
 - A process guide covering how the team would work going forward, which I used to train 22+ PMs on the new tool before launch
 
-**Getting technical sign-off early.** The pipeline needed sign-off from engineering and the infra team, plus IT and security approval for the SSO integration. I met directly with IT on SSO support and domain changes, and with engineering and infra on the pipeline itself, so sign-off came through without delays once we were ready to move forward.
+**Getting technical sign-off early.** The pipeline needed sign-off from engineering and the infra team, plus IT and security approval for the single sign-on (SSO) integration. I met directly with IT on SSO support and domain changes, and with engineering and infra on the pipeline itself, so sign-off came through without delays once we were ready to move forward.
 
 ---
 
