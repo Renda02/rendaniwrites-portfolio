@@ -1,0 +1,11 @@
+extends: existence
+message: "Check 'docs' here — informal ('docs team') is fine, but narrative prose sometimes reads better as 'documentation'."
+level: suggestion
+ignorecase: true
+scope: summary
+# The trailing (?:[^-]|$) excludes "docs-as-code" and similar docs-* compounds
+# (RE2 has no lookahead, so this works around it: match "docs" only when the
+# next character isn't a hyphen). "docs-as-code" is a fixed industry term, not
+# a documentation-vs-docs style choice.
+tokens:
+  - '\bdocs\b(?:[^-]|$)'

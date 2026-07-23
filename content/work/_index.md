@@ -23,7 +23,7 @@ Support the Product Education and documentation teams (6 people total) with tool
 - Led API documentation migration from Stoplight to GitBook through a proof of concept. The migration saved €35,000 annually and consolidated API and product documentation into a single unified portal.
 - Led migration of 4,000+ pages from Confluence to GitBook in under 4 months with zero downtime. Architected a Cloudflare-based domain consolidation into a single documentation portal and authored 900+ redirect mappings in YAML through GitHub. Validated the cutover in a dummy portal environment before production deployment. Identified and resolved an Okta SSO gap during the transition.
 - Delivered hands-on GitBook training to 22+ product managers, building cross-functional documentation adoption and establishing documentation best practices across the organization.
-- Coordinated staging-to-production branch handoffs with feature development teams to keep the API docs pipeline aligned with release cycles.
+- Coordinated staging-to-production branch handoffs with feature development teams to keep the API documentation pipeline aligned with release cycles.
 - Identified a gap in the OpenAPI specification (missing tags) and is collaborating on the fix with feature teams.
 - Led a GitHub repository naming-convention cleanup (capitalized to lowercase file and folder structure) aligned to GitHub best practices, with zero breaking changes to production.
 - Led weekly AI sessions on prompt engineering and ChatGPT integration, embedding ChatGPT projects into team workflows. The resulting efficiency gains helped secure budget to hire a dedicated AI engineer. That hire is currently underway.

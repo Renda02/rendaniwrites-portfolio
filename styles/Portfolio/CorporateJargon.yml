@@ -1,0 +1,10 @@
+extends: substitution
+message: "Avoid corporate jargon — prefer a plain, direct verb (e.g. 'contact', 'email', 'use')."
+ignorecase: true
+level: warning
+swap:
+  reach out to: contact
+  reach out: contact
+  circle back: follow up
+  touch base: check in
+  leverage: use

@@ -1,0 +1,8 @@
+extends: existence
+message: "Don't use an ampersand — write 'and' instead."
+link: 'https://developers.google.com/style/ampersands'
+nonword: true
+level: error
+scope: text
+tokens:
+  - '&'

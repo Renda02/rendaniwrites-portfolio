@@ -1,0 +1,8 @@
+extends: existence
+message: "'e.g.' takes a comma before it, never after — e.g. this, not e.g., this."
+link: 'https://developers.google.com/style/abbreviations'
+level: warning
+scope: text
+tokens:
+  - 'e\.g\.,'
+  - '[a-zA-Z0-9] e\.g\.'

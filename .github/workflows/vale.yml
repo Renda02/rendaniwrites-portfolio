@@ -1,0 +1,30 @@
+name: Check writing style with Vale
+
+on:
+  pull_request:
+    paths:
+      - 'content/**/*.md'
+      - '.vale.ini'
+      - 'styles/**'
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Run Vale
+        uses: vale-cli/vale-action@v2
+        continue-on-error: true
+        with:
+          files: '["content"]'
+          reporter: github-pr-check
+          fail_on_error: false
+          filter_mode: added
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,20 @@
+extends: capitalization
+message: "'%s' should use sentence case."
+level: warning
+scope: heading
+match: $sentence
+indicators:
+  - ":"
+exceptions:
+  - I
+  - Git
+  - Hugo
+  - GitHub
+  - GitBook
+  - Vale
+  - API
+  - Crowdin
+  - Stoplight
+  - Technical Writer
+  - Frontend Developer
+  - Javier
