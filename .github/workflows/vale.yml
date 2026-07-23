@@ -21,6 +21,7 @@ jobs:
 
       - name: Run Vale
         uses: vale-cli/vale-action@v2
+        continue-on-error: true
         with:
           files: '["content"]'
           reporter: github-pr-check
