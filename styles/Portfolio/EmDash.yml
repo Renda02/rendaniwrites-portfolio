@@ -1,0 +1,8 @@
+extends: existence
+message: "Don't use an em dash — restructure with a colon, period, or comma instead."
+link: 'https://developers.google.com/style/dashes'
+nonword: true
+level: error
+scope: text
+tokens:
+  - '—'

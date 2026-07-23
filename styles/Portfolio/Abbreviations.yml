@@ -1,0 +1,9 @@
+extends: conditional
+message: "'%s' is used, but its spelled-out first-use form ('infrastructure (infra)') doesn't appear on this page."
+link: 'https://developers.google.com/style/abbreviations'
+level: suggestion
+ignorecase: false
+# Google's own Acronyms rule only matches all-caps 3-5 letter tokens, so it
+# never catches informal lowercase shortenings like "infra" for "infrastructure".
+first: '\binfra\b'
+second: 'infrastructure \(infra\)'

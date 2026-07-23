@@ -1,0 +1,7 @@
+extends: existence
+message: "Use 'allow' only for permissions/access control — otherwise prefer 'let'."
+ignorecase: true
+level: suggestion
+scope: text
+tokens:
+  - '\ballows?\b'

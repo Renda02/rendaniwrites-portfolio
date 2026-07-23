@@ -12,7 +12,7 @@ I was then assigned to lead the migration. This meant:
 
 * Moving 4,000 to 5,000 pages of product documentation onto one platform with zero breaking changes
 * Designing a new pipeline from scratch
-* Establishing new ways of working between docs, the product manager, and engineering
+* Establishing new ways of working between documentation, the product manager, and engineering
 
 This was my first time leading a documentation platform migration.
 
@@ -26,7 +26,7 @@ This was my first time leading a documentation platform migration.
 - PM and engineering worked from different spaces with different tool constraints, which slowed collaboration
 
 **What we were aiming for:**
-- Streamline collaboration between PM and the docs team, letting PMs contribute directly through the authoring tool, with the docs team reviewing
+- Streamline collaboration between PM and the documentation team, letting PMs contribute directly through the authoring tool, with the documentation team reviewing
 - Move to one platform instead of several, with writing, maintaining, and publishing happening in the same place
 - Make documentation easy to find, and reduce the cognitive load on users from moving between tools when searching for information
 
@@ -60,7 +60,7 @@ I aligned with the PM on:
 
 **A rollback safety net, not a hard cutover.** I kept the legacy platform running in parallel on launch day while redirects pointed to the new pages, giving a live 24-hour window to verify everything worked before disabling the legacy platform entirely.
 
-**The end-to-end pipeline.** Content is authored in the new tool, which syncs to a develop branch in version control, then flows automatically through to production on release, with docs stored as markdown files throughout.
+**The end-to-end pipeline.** Content is authored in the new tool, which syncs to a develop branch in version control, then flows automatically through to production on release, with documentation stored as markdown files throughout.
 
 ---
 
@@ -68,9 +68,9 @@ I aligned with the PM on:
 
 None of those decisions worked in isolation. I also had to bring the right people in early, not just build the plan alone.
 
-I believe in bringing docs allies in early rather than presenting a finished plan.
+I believe in bringing allies in early rather than presenting a finished plan.
 
-**Aligning on the why, not just the what.** One of the underlying reasons for this migration was to let PMs contribute directly through the authoring tool instead of going through a documentation request channel, with the docs team reviewing. That reasoning needed clear, early communication so people understood why this mattered.
+**Aligning on the why, not just the what.** One of the underlying reasons for this migration was to let PMs contribute directly through the authoring tool instead of going through a documentation request channel, with the documentation team reviewing. That reasoning needed clear, early communication so people understood why this mattered.
 
 **Communication channels.** My manager handled customer-facing communication with clients. I kept the team and stakeholders aligned through:
 - A wiki-based one-pager tracking migration progress, accessible to anyone in the org
@@ -107,7 +107,7 @@ Beyond individual workstreams, I made sure the team had a shared way of working.
 
 **Formatting gaps.** The new tool didn't support merging tables the way the legacy tool did, so lists and tables rendered differently. I used it as a chance to collaborate with the training pair on how we'd approach tables going forward, then let them own the fix.
 
-**Legal's redirects, post-launch.** Three links broke as a side effect of folding legal's docs into the unified knowledge base. I gave legal their own standalone space with its own domain path instead. Resolved within 24 hours.
+**Legal's redirects, post-launch.** Three links broke as a side effect of folding legal's documentation into the unified knowledge base. I gave legal their own standalone space with its own domain path instead. Resolved within 24 hours.
 
 ---
 
@@ -116,7 +116,7 @@ Beyond individual workstreams, I made sure the team had a shared way of working.
 - 100% of content migrated at launch: a full lift-and-shift, no partial or phased release
 - Unified writing, maintaining, and publishing into one system, eliminating manual handoffs across 2 or more tools
 - Documentation became easier to find, with everything now searchable in one place instead of split across systems
-- Defined a new docs lifecycle and process for the team, still in use 2+ years on
+- Defined a new documentation lifecycle and process for the team, still in use 2+ years on
 - Zero breaking changes across 4,000+ pages at launch, despite 600 redirects
 - Trained and onboarded 22+ PMs onto self-serve authoring, now an active, adopted workflow, not just a plan
 - Gained page-level feedback from readers, helping identify unclear documentation directly from user input

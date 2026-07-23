@@ -5,7 +5,7 @@ description: "The daily Git workflow and commands I learned through trial, error
 tags: ["git", "version-control", "workflow"]
 ---
 
-In my previous role as a solo tech writer for a fintech company, we worked entirely in docs-as-code. We documented everything using code workflows from Visual Studio Code. As someone who used to fear the terminal, I chose to use only the terminal. I wanted to become proficient in git commands, even if it meant breaking things.
+In my previous role as a solo technical writer for a fintech company, we worked entirely in docs-as-code. We documented everything using code workflows from Visual Studio Code. As someone who used to fear the terminal, I chose to use only the terminal. I wanted to become proficient in git commands, even if it meant breaking things.
 
 And yes, I broke things a lot.
 
