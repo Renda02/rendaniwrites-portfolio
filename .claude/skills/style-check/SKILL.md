@@ -13,7 +13,7 @@ Vale runs the mechanical style checklist (`styles/Portfolio` — this site's own
 - Editing existing prose anywhere under `content/` (including `content/work/_index.md`, the resume page, and section `_index.md` intros) in a way that touches meaning, structure, or tone — not just fixing something Vale already flagged.
 - Any content update at all, to check it uses terminology and phrasing consistent with the rest of the site (not just consistent within the one file being edited).
 
-Skip when: the change is purely mechanical and Vale already flags it (just fix what Vale reported). Skip for non-content files (`config.toml`, `layouts/`, CSS) — this skill is about copy, not code. Skip for `AGENTS.md`-covered structure (file naming, image alt text, code-fence language).
+Skip when: the change is purely mechanical and Vale already flags it (just fix what Vale reported). Skip for non-content files (`config.toml`, `layouts/`, CSS) — this skill is about copy, not code. Skip for `AGENTS.md`-covered structure (file naming, image alt text, code-fence language). Skip for single-post narrative judgment (one clear goal, solid structure, a strong ending): that's `voice-and-tone`'s job, not this skill's.
 
 ## Body
 
