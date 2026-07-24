@@ -14,24 +14,22 @@ I work at the intersection of engineering and documentation: translating technic
 
 **Nexthink | Madrid, Spain | December 2023 - Present**
 
-Support the Product Education and documentation teams (6 people total) with tooling, automation, and cross-functional infrastructure. Lead documentation infrastructure projects and AI automation initiatives.
+Own the documentation platform and tooling for the Product Education and Documentation team, driving automation and cross-functional infrastructure initiatives. 
 
 **Key achievements:**
 
--  Own API documentation across 4+ products, including documentation for AI-powered features and AI models.
 - Mentored a junior technical writer to independently own the release cycle, using docs-as-code practices and GitBook training.
-- Led API documentation migration from Stoplight to GitBook through a proof of concept. The migration saved €35,000 annually and consolidated API and product documentation into a single unified portal.
-- Led migration of 4,000+ pages from Confluence to GitBook in under 4 months with zero downtime. Architected a Cloudflare-based domain consolidation into a single documentation portal and authored 900+ redirect mappings in YAML through GitHub. Validated the cutover in a dummy portal environment before production deployment. Identified and resolved an Okta SSO gap during the transition.
+- Led API documentation migration from Stoplight to GitBook, unifying API and product documentation into one platform while saving €35,000 annually.
+- Led migration of 4,000+ pages from Confluence to GitBook in under 4 months with zero downtime. 
 - Delivered hands-on GitBook training to 22+ product managers, building cross-functional documentation adoption and establishing documentation best practices across the organization.
 - Coordinated staging-to-production branch handoffs with feature development teams to keep the API documentation pipeline aligned with release cycles.
-- Identified a gap in the OpenAPI specification (missing tags) and is collaborating on the fix with feature teams.
-- Led a GitHub repository naming-convention cleanup (capitalized to lowercase file and folder structure) aligned to GitHub best practices, with zero breaking changes to production.
-- Led weekly AI sessions on prompt engineering and ChatGPT integration, embedding ChatGPT projects into team workflows. The resulting efficiency gains helped secure budget to hire a dedicated AI engineer. That hire is currently underway.
+- Collaborated on a GitHub repository naming-convention cleanup for in-product documentation, standardizing file/folder structure to lowercase with zero breaking changes to production.
+- Led weekly AI sessions on prompt engineering and ChatGPT integration, embedding ChatGPT projects into team workflows.
 - Led Japanese localization project for new market entry, from vendor discovery through pipeline design. Integrated Crowdin with a GitHub Actions-triggered translation pipeline on merge and used custom ChatGPT-assisted prompts to preserve technical terminology. 
-- Currently evaluating feasibility to extend translation to 80 Rise360 courses.
-- Leading an AI automation initiative to generate release notes automatically by integrating Aha! with documentation tooling.
+- Evaluated feasibility of extending translation to 80+ courses in support of the Learning team, including onboarding one team member on Crowdin so they could navigate and use the platform independently.
+- Led an AI automation initiative to auto-generate release notes by integrating Aha! with documentation tooling; presented the proposal to leadership, resulting in the hire of an AI engineer to build it out.
 
-<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, GitHub Actions, AI automation, prompt engineering, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies</p>
+<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, GitHub Actions, AI automation, prompt engineering, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
 
 ### Technical Writer
 
