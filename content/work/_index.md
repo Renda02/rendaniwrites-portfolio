@@ -6,6 +6,8 @@ description: "Experience and career history."
 I build documentation infrastructure, from migration pipelines and localization systems to GitHub Actions workflows and AI-embedded documentation.
 I work at the intersection of engineering and documentation: translating technical requirements into systems, aligning cross-functional teams around new workflows, and shipping documentation infrastructure that scales.
 
+{{< connect >}}
+
 ---
 
 ## Work experience
@@ -69,3 +71,5 @@ Solo technical writer owning the documentation lifecycle across 6+ cross-functio
 - **Postman API Fundamentals Student Expert** (2024)
 - **Technical Writer Course**
 - **B.Tech. Quality** – University of Johannesburg
+
+
