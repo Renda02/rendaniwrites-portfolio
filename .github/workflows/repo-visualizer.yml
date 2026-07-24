@@ -1,0 +1,29 @@
+name: Update repo visualization
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  visualize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@0.9.1
+        with:
+          excluded_paths: 'public,resources,.git,.github'
+          output_file: 'diagram.svg'
+          should_push: false
+
+      - name: Commit diagram
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update repo diagram'
+          file_pattern: 'diagram.svg'
