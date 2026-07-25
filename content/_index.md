@@ -1,6 +1,6 @@
 ---
 title: "Hey, I'm Rendani"
-description: "Background, side projects, and what I'm working on."
+description: "I help teams build documentation infrastructure & AI-embedded workflows so they can scale with confidence and zero disruption."
 ---
 
 What I've learned through my career is it was never about what you already knew. It was about figuring things out, and if you didn't know, building trust fast enough with people to help fill in the gaps.
@@ -30,7 +30,3 @@ I enjoy reading books, hanging out with my daughter, and picking up embroidery. 
 
 
 {{< connect >}}
-
----
-
-*Makwande* – let there be growth ©

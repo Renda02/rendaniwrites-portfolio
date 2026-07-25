@@ -411,10 +411,6 @@ main {
 
 .site-footer__bottom a {
   color: var(--color-accent);
-  text-decoration: none;
-}
-
-.site-footer__bottom a:hover {
   text-decoration: underline;
 }
 
