@@ -1,17 +1,8 @@
 {{ define "main" }}
-<div class="container work-page">
+<div class="container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-
-  {{ if .Pages }}
-  <ul class="page-list__items">
-    {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ if .Description }}<p>{{ .Description }}</p>{{ end }}
-    </li>
-    {{ end }}
-  </ul>
-  {{ end }}
+  <hr class="section-divider">
+  {{ partial "entry-list.html" . }}
 </div>
 {{ end }}

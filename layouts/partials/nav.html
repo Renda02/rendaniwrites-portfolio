@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="site-header__inner">
-    <a href="{{ "/" | relURL }}" class="site-header__brand{{ if .IsHome }} is-active{{ end }}">{{ site.Params.firstName | default "Rendani" }}</a>
+    <a href="{{ "/" | relURL }}" class="site-header__brand{{ if .IsHome }} is-active{{ end }}">
+      <img src="{{ "/images/rendani-avatar.png" | relURL }}" alt="" class="site-header__avatar">
+      {{ site.Params.firstName | default "Rendani" }}
+    </a>
     <button type="button" class="site-header__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
       <span class="site-header__toggle-bar"></span>
       <span class="site-header__toggle-bar"></span>

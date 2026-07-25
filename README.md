@@ -17,10 +17,10 @@ Builds to `public/` (gitignored) with `hugo`.
 ## Site structure
 
 - **About** (`/`): who I am
-- **Resume** (`/work/`): work history
-- **Projects** (`/projects/`): case studies
 - **Blog** (`/blog/`): posts
+- **Work** (`/work/`): case studies
 - **API sample** (`/api/`): playground
+- **Resume** (`/resume/`): work history
 
 ## Repo structure
 
@@ -62,9 +62,9 @@ Netlify deploys on every update to the main branch, independently of any workflo
 
 ### Probabilistic
 
-A skill is a saved set of instructions I've taught Claude to follow for a specific task. Claude can notice on its own that one applies and use it, or I can call it directly by typing its name in the Claude Code terminal, like a shortcut.
+A skill is a saved set of instructions I've gave Claude to follow for a specific task. Claude can notice on its own that one applies and use it, or I can call it directly by typing its name in the Claude Code terminal, like a shortcut.
 
-| Skill | What it does | Shortcut |
+| Skill | What it does | Command |
 |---|---|---|
 | [style-check](.claude/skills/style-check/) | Reviews writing across the whole site for consistency, catching what Vale structurally can't: the same term worded two different ways on different pages, a sentence that repeats something said elsewhere, a section whose structure doesn't match its neighbors | `/style-check` |
 | [voice-and-tone](.claude/skills/voice-and-tone/) | Checks a blog draft has one clear point, a solid structure, and a strong ending, the way an editor would | `/voice-and-tone` |

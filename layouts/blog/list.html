@@ -2,6 +2,7 @@
 <div class="container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  <hr class="section-divider">
   {{ partial "entry-list.html" . }}
 </div>
 {{ end }}

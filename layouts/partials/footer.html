@@ -6,7 +6,12 @@
     </div>
 
     <div class="site-footer__col">
-      <h2 class="site-footer__heading">Explore</h2>
+      <h2 class="site-footer__heading">Let's connect</h2>
+      {{ partial "social-links.html" (dict "class" "site-footer__social") }}
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">Navigate</h2>
       <nav aria-label="Footer navigation">
         <ul class="site-footer__links">
           {{ range site.Menus.main }}
@@ -15,14 +20,9 @@
         </ul>
       </nav>
     </div>
-
-    <div class="site-footer__col">
-      <h2 class="site-footer__heading">Let's connect</h2>
-      {{ partial "social-links.html" (dict "class" "site-footer__social") }}
-    </div>
   </div>
 
   <div class="site-footer__bottom">
-    <p>© {{ now.Year }} {{ site.Params.brand | default site.Title }}. All rights reserved.</p>
+    <p>© {{ now.Year }} {{ site.Params.brand | default site.Title }}. All rights reserved. · Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>, hosted on <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a>.</p>
   </div>
 </footer>
