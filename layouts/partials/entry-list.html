@@ -6,7 +6,13 @@
     {{ if not .Date.IsZero }}
     <p class="blog-entry__meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
     {{ end }}
+    {{ if .Params.impactSummary }}
+    {{ $first := index (split .Params.impactSummary "\n\n") 0 }}
+    <p class="blog-entry__excerpt">{{ $first | markdownify }}</p>
+    {{ partial "post-tags.html" . }}
+    {{ else }}
     {{ with .Description }}<p class="blog-entry__excerpt">{{ . }}</p>{{ end }}
+    {{ end }}
   </li>
   {{ end }}
 </ul>

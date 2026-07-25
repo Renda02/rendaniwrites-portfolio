@@ -9,5 +9,24 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  {{ if and .Content (strings.Contains .Content "language-mermaid") }}
+  <script src="{{ "vendor/mermaid/mermaid.min.js" | relURL }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var blocks = document.querySelectorAll("code.language-mermaid");
+      blocks.forEach(function (block) {
+        var pre = document.createElement("pre");
+        pre.className = "mermaid";
+        pre.textContent = block.textContent;
+        block.closest("pre").replaceWith(pre);
+      });
+      if (window.mermaid && blocks.length) {
+        var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? "dark" : "default" });
+        mermaid.run();
+      }
+    });
+  </script>
+  {{ end }}
 </body>
 </html>

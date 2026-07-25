@@ -1,0 +1,43 @@
+<div class="case-study-header">
+  {{ with .Params.tags }}
+  <p class="case-study-header__breadcrumb">
+    <a href="/work/">← All work</a>
+    <span class="case-study-header__breadcrumb-sep">·</span>
+    {{ range $i, $tag := first 3 . }}{{ if $i }} · {{ end }}{{ upper (replace $tag "-" " ") }}{{ end }}
+  </p>
+  {{ end }}
+
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.intro }}
+  <p class="case-study-header__intro">{{ . }}</p>
+  {{ end }}
+
+  <div class="case-study-header__meta">
+    {{ with .Params.role }}
+    <div class="case-study-header__meta-item">
+      <span class="case-study-header__meta-label">Role</span>
+      <span class="case-study-header__meta-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.team }}
+    <div class="case-study-header__meta-item">
+      <span class="case-study-header__meta-label">Team</span>
+      <span class="case-study-header__meta-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.timeline }}
+    <div class="case-study-header__meta-item">
+      <span class="case-study-header__meta-label">Timeline</span>
+      <span class="case-study-header__meta-value">{{ . }}</span>
+    </div>
+    {{ end }}
+  </div>
+
+  {{ with .Params.impactSummary }}
+  <div class="case-study-header__impact">
+    <p class="case-study-header__impact-label">Impact summary</p>
+    {{ . | markdownify }}
+  </div>
+  {{ end }}
+</div>

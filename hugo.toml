@@ -23,7 +23,7 @@ title = 'Rendani Luvhengo'
     weight = 1
   [[menu.main]]
     identifier = "work"
-    name = "Resume"
+    name = "Work"
     url = "/work/"
     weight = 2
   [[menu.main]]
@@ -32,17 +32,27 @@ title = 'Rendani Luvhengo'
     url = "/blog/"
     weight = 3
   [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume/"
+    weight = 4
+  [[menu.main]]
     identifier = "api"
     name = "API sample"
     url = "/api/"
-    weight = 4
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
     weight = 5
 
 [[redirects]]
 from = '/about/'
 to = '/'
+status = 301
+
+[[redirects]]
+from = '/projects/'
+to = '/work/'
+status = 301
+
+[[redirects]]
+from = '/projects/*'
+to = '/work/:splat'
 status = 301

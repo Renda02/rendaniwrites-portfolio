@@ -1,7 +1,14 @@
 {{ with .Params.tags }}
 <ul class="post-tags">
   {{ range . }}
-  <li><a href="/tags/{{ . | urlize }}/" class="post-tags__link">{{ replace . "-" " " | strings.FirstUpper }}</a></li>
+  {{ $tag := . }}
+  {{ $label := replace $tag "-" " " }}
+  {{ if or (eq (lower $tag) "ai") (eq (lower $tag) "api") }}
+    {{ $label = upper $label }}
+  {{ else }}
+    {{ $label = $label | strings.FirstUpper }}
+  {{ end }}
+  <li><a href="/tags/{{ $tag | urlize }}/" class="post-tags__link">{{ $label }}</a></li>
   {{ end }}
 </ul>
 {{ end }}

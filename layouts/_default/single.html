@@ -3,8 +3,12 @@
   {{ if .Params.showToc | default true }}
   <div class="page page--with-toc">
     <article>
-      <h1>{{ .Title }}</h1>
-      {{ partial "post-tags.html" . }}
+      {{ if .Params.role }}
+        {{ partial "case-study-header.html" . }}
+      {{ else }}
+        <h1>{{ .Title }}</h1>
+        {{ partial "post-tags.html" . }}
+      {{ end }}
       {{ .Content }}
     </article>
     {{ if .TableOfContents }}
@@ -18,9 +22,15 @@
   </div>
   {{ else }}
   <article>
-    <h1>{{ .Title }}</h1>
+    {{ if .Params.role }}
+      {{ partial "case-study-header.html" . }}
+    {{ else }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
     {{ .Content }}
-    {{ partial "post-tags.html" . }}
+    {{ if not .Params.role }}
+      {{ partial "post-tags.html" . }}
+    {{ end }}
   </article>
   {{ end }}
 </div>

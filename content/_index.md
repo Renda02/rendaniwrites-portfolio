@@ -9,9 +9,11 @@ I started in Quality Management Systems, where I learned how to turn unstructure
 
 Three weeks into my first technical writing role, my manager left and I became the solo writer. I owned and maintained the documentation lifecycle using a docs-as-code approach in an agile environment, and built the relationships that kept me ahead of what was coming. That instinct became the pattern for every role after: walk into the mess, build the trust, own what's needed. Read the blog post on [How I became a solo technical writer](/blog/how-i-became-a-solo-technical-writer).
 
-I went on to join a team mid-restructuring, ending up owning the documentation platform end to end. Over the last two years, I've led migrations, built documentation infrastructure, and introduced new ways of working that scale with both teams and tools. Read the case study on [Documentation platform migration](/projects/documentation-platform-migration).
+I went on to join a team mid-restructuring, ending up owning the documentation platform end to end. Over the last two years, I've led migrations, built documentation infrastructure, and introduced new ways of working that scale with both teams and tools. Read the case study on [The documentation localization](/work/localisation-project).
 
 Put me in charge of something, and I'll ask the right questions, figure out what's needed, and get it done, without breaking what's already working.
+
+Curious what else I've built? [See all my work](/work/).
 
 ## How I work
 
@@ -28,3 +30,7 @@ I enjoy reading books, hanging out with my daughter, and picking up embroidery. 
 
 
 {{< connect >}}
+
+---
+
+*Makwande* – let there be growth ©

@@ -1,6 +1,15 @@
 ---
-title: "Documentation platform migration"
+title: "The documentation migration"
+weight: 1
 description: "Took over a documentation platform migration, leading a 7-person team to zero breaking changes across 4,000+ pages."
+role: "Documentation Platform Owner / Migration Lead"
+team: "PM, Engineering, IT, Legal, Security"
+timeline: "Scoping and planning through migration execution and launch"
+intro: "Unifying documentation authoring, maintenance, and publishing into one platform, after taking over a stalled migration mid-project."
+impactSummary: |
+  Led a team of seven to migrate 4,000+ pages onto one unified documentation platform, with zero breaking changes at launch.
+
+  Owning the pipeline design, 600+ manual redirects, and cross-functional sign-off turned a mid-project takeover into a pipeline the team fully adopted as their own.
 tags: ["documentation", "migration", "leadership", "stakeholder-management", "risk-management"]
 ---
 
@@ -24,7 +33,7 @@ This was my first time leading a documentation platform migration.
 
 - Documentation was split across disconnected tools: written and maintained in wiki pages, published separately through a publishing tool, with other content stored separately in version control
 - Because these tools weren't linked, customers had to search across separate systems to find information, and splitting documentation across different platforms made it harder to find what they needed
-- PM and engineering worked from different spaces with different tool constraints, which slowed collaboration
+- The product manager (PM) and engineering worked from different spaces with different tool constraints, which slowed collaboration
 
 **What we were aiming for:**
 - Streamline collaboration between PM and the documentation team, letting PMs contribute directly through the authoring tool, with the documentation team reviewing
