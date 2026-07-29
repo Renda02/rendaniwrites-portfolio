@@ -70,11 +70,9 @@ Going through the three case studies, I noticed two of them have a "What changed
 
 ### Judgment calls on the rules themselves
 
-**Vale was set to hard-block the pull request on any error-level rule.** Em dashes, ampersands, and periods in acronyms would turn a whole PR check red, no matter how small the violation. I changed it to advisory instead: Vale still comments on everything it finds, but it no longer blocks a merge. The reasoning wasn't "linting doesn't matter." It was that gate severity should match actual stakes, and this is a personal portfolio, not a team docs pipeline where an unreviewed style slip could ship to production. A hard gate here would've been friction with no proportional benefit.
+A rule can't fit every scenario, and that's truer here than it would be on a real technical writing team. This pipeline is scaled for a personal portfolio, not a shared docs platform, so the same style and consistency rules that would hold firm on a team can't always be enforced with the same weight here. There's real flexibility in how a rule gets applied case by case. What keeps that flexibility from turning into inconsistency is the human in the loop: nothing ships until I've decided whether a rule's intent still holds for this specific case, or whether the rule was built for a scale I'm not operating at.
 
-**Vale's passive-voice rule flagged 8 constructions in one pass. Only 2 were worth rewriting.** The other 6 were syntactically passive but read fine as-is. I considered removing the rule entirely, since a 75% false-positive rate is a real cost. I kept it anyway: even at low precision, it's free, complete recall, and I'd rather scan a short list of mostly-noise flags than manually re-read every sentence myself looking for the ones a regex wouldn't catch. What I did change was the rule's message, from a blanket "use active voice instead" to "check whether active reads better here," so the tool stopped implying a verdict it couldn't actually back up.
-
-**One em dash stayed, on purpose, against the site's own rule.** This site bans em dashes outright, no exceptions, as a deliberate style choice. Vale flagged one anyway, in the localization case study, as an error. I looked at the three rewritten alternatives and kept the em dash. The rule wasn't wrong to flag it. I decided this one sentence read worse without it, and a blanket ban is still a design choice I get to override in a specific case, not a law of the site.
+Vale was originally set to hard-block a pull request on any error-level rule. I changed it to advisory instead: the rule wasn't wrong, it was just calibrated for stakes this site doesn't carry.
 
 ## Conclusion
 
