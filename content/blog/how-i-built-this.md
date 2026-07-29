@@ -22,8 +22,6 @@ That experience left me with questions that stuck:
 
 This repo is my answer, built at the smallest possible scale I could test it at: one person, one pipeline, and a hard rule that nothing ships without a human reviewing it first.
 
-That ruled out building another agent from a description of the task: everything here started manual and small, and only became automated once it had actually been tested and proven to work.
-
 ## The pipeline
 
 I built this with Claude Code, planning each day's work one task at a time, each one its own short-lived branch, merged and reviewed on its own.
