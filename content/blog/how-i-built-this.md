@@ -9,8 +9,6 @@ This site shows both my professional work and the pipeline behind it.
 
 Anyone can see the finished writing. But the writing alone doesn't show what actually matters: whether the infrastructure behind it holds up. That's the real reason to show the pipeline, not just the output. It was built to answer a specific question: how do you build a documentation pipeline that scales with AI embedded in the workflow, and what does governance actually look like once it's there, not as a policy, but as a working system.
 
-This site is my answer to that question.
-
 ## My vision
 
 A few months ago, I was part of a team building an agent to draft technical documentation. The drafts came fast. The problem showed up whenever a human gave feedback: the agent would either regenerate the whole document from scratch and lose everything that was already right, or barely touch it and ignore what we'd just told it. There was no middle ground, and every round trip cost more tokens than the last.
