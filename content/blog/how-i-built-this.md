@@ -1,15 +1,13 @@
 ---
 date: 2026-07-29
 title: "How I built this"
-description: "How this site was built with Claude Code, and the decisions, tradeoffs, and judgment calls the tooling couldn't make for me."
+description: "How this site was built with Claude Code, and the decisions and judgment calls the tooling couldn't make for me."
 tags: ["technical-writing", "ai-workflows", "docs-as-code"]
 ---
 
 This site shows both my professional work and the pipeline behind it.
 
 Anyone can see the finished writing. But the writing alone doesn't show what actually matters: whether the infrastructure behind it holds up. That's the real reason to show the pipeline, not just the output. It was built to answer a specific question: how do you build a documentation pipeline that scales with AI embedded in the workflow, and what does governance actually look like once it's there, not as a policy, but as a working system.
-
-AI can generate a draft quickly. What's still unclear, for most teams, is what structure holds up as the product changes underneath it. That's where trust actually gets decided, not at the drafting step, but in everything around it.
 
 This site is my answer to that question.
 
