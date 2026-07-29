@@ -58,15 +58,11 @@ One of these, `voice-and-tone`, has a standing instruction that when I correct s
 
 ## What I learned
 
-None of the architecture above is the interesting part, though. Tooling is easy to copy. What isn't easy to copy is judgment, and judgment only shows up in the moments where a technically correct answer still needed a human to say no, or a moment where nobody, human or AI, had a clean answer yet.
+None of the architecture above is the interesting part, though. Tooling is easy to copy. What isn't easy to copy is judgment, and judgment only shows up in the moments where a technically correct answer still needed a human to say no.
 
 ### Decisions I made
 
 **A title suggestion was clear and specific. It was also aimed at the wrong reader.** Reviewing the localization case study, `voice-and-tone` scored the draft 3 of 3 on its own framework and suggested the title lean into the idea doing the most work in the piece: "The Embedded Localization Pipeline." It wasn't wrong that the idea was strong. It was wrong about who'd be reading the title. Someone scanning a list of case studies for "has this person localized documentation before" needs that stated plainly, not inferred from the word "pipeline." I rejected the suggestion and landed on "Documentation Localization" instead, a plainer, less clever title that says exactly what a hiring manager is scanning for.
-
-### A tradeoff I haven't resolved
-
-Going through the three case studies, I noticed two of them have a "What changed" before/after table summarizing the impact, and one doesn't. That's a real inconsistency. What isn't obvious is the fix: add a table everywhere, remove it everywhere, or accept that not every case study carries the same kind of information, so not every one needs the same structure. Unlike the title, there's no clean answer here to accept or reject, just a genuine tradeoff between site-wide consistency and letting each page's structure follow its content. It's still open.
 
 ### Judgment calls on the rules themselves
 
@@ -76,9 +72,9 @@ Vale was originally set to hard-block a pull request on any error-level rule. I 
 
 ## Conclusion
 
-None of these were dramatic failures. They were the ordinary kind: a suggestion that was correct on its own terms but missing context only I had, a rule doing exactly what it was built to do while still needing a human to decide when that wasn't the point, and an inconsistency that was real but had no single right fix.
+None of these were dramatic failures. They were the ordinary kind: a suggestion that was correct on its own terms but missing context only I had, and a rule doing exactly what it was built to do while still needing a human to decide when that wasn't the point.
 
-What made them recoverable was that I read the output closely, every time, and was willing to override a technically correct answer when it solved the wrong problem, or to leave a real tradeoff open rather than force a fix I didn't believe in yet. The pipeline catches what a rule can catch. It can't catch the difference between "inconsistent" and "wrong," and it can't tell me which inconsistencies are actually worth fixing.
+What made them recoverable was that I read the output closely, every time, and was willing to override a technically correct answer when it solved the wrong problem. The pipeline catches what a rule can catch. It can't catch the difference between a suggestion that's technically right and one that's actually wrong for this specific case.
 
 Trust and consistency don't come from the tooling alone. They still need judgment, every time. That's still mine to decide.
 
