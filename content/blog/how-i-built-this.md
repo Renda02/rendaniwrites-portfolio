@@ -64,7 +64,7 @@ None of the architecture above is the interesting part, though. Tooling is easy 
 
 A rule can't fit every scenario, and that's truer here than it would be on a real technical writing team. This pipeline is scaled for a personal portfolio, not a shared docs platform, so the same style and consistency rules that would hold firm on a team can't always be enforced with the same weight here. There's real flexibility in how a rule gets applied case by case. What keeps that flexibility from turning into inconsistency is the human in the loop: nothing ships until I've decided whether a rule's intent still holds for this specific case, or whether the rule was built for a scale I'm not operating at.
 
-Vale was originally set to hard-block a pull request on any error-level rule. I changed it to advisory instead: the rule wasn't wrong, it was just calibrated for stakes this site doesn't carry.
+Vale was originally set to hard-block a pull request on any error-level rule. I changed it to advisory instead: the rule wasn't wrong, it was just calibrated for stakes this site doesn't carry. Starting with a manual gate and automating enforcement later is how most real pipelines mature, not a workaround. The only difference here is scale: a solo site with one reviewer never has a reason to flip that switch to fully automatic.
 
 ## Conclusion
 
