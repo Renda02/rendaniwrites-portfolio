@@ -5,7 +5,7 @@ description: "How this site was built with Claude Code, and the decisions and ju
 tags: ["technical-writing", "ai-workflows", "docs-as-code"]
 ---
 
-This site shows both my professional work and the pipeline behind it.
+This site shows both my professional work and the pipeline behind it. Most of that pipeline exists because of friction I kept running into in my own work, and that's what motivated me to build it.
 
 Anyone can see the finished writing. But the writing alone doesn't show what actually matters: whether the infrastructure behind it holds up. That's the real reason to show the pipeline, not just the output. It was built to answer a specific question: how do you build a documentation pipeline that scales with AI embedded in the workflow, and what does governance actually look like once it's there, not as a policy, but as a working system.
 
