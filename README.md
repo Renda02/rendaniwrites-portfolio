@@ -4,7 +4,7 @@ Personal portfolio site, built with [Hugo](https://gohugo.io/), deployed on Netl
 
 ## What this repo actually is
 
-This isn't just a portfolio site. It's a working example of how I run a documentation project properly: I track every change, Vale and the naming checks catch terminology and spelling mistakes automatically, and Claude skills handle the harder calls, like whether something reads consistent with the rest of the site.
+This isn't just a portfolio site. It's a working example of how I run a documentation project properly: I track every change, Vale catches terminology and spelling mistakes automatically, the naming check enforces a consistent image-naming pattern, and Claude skills handle the harder calls, like whether something reads consistent with the rest of the site.
 
 ## Getting started
 
@@ -58,7 +58,7 @@ Automated workflows that run on their own, triggered by something happening in t
 | [auto-update-pr.yml](.github/workflows/auto-update-pr.yml) | New changes land on the main branch | Keeps other open pull requests in sync with the latest changes, so they don't fall behind and conflict |
 | [stale-pr-notice.yml](.github/workflows/stale-pr-notice.yml) | Every Monday morning | Flags pull requests that have sat untouched for two weeks or more |
 
-Netlify deploys on every update to the main branch, independently of any workflow above.
+Netlify also builds a deploy preview for every pull request, independently of the workflows above, then deploys to production automatically once it merges to the main branch.
 
 ### Probabilistic
 
