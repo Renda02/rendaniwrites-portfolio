@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container work-page">
+  <div class="page page--with-toc">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+    {{ if .TableOfContents }}
+    <aside class="page__toc">
+      <div class="page__toc-inner">
+        <h3>On this page</h3>
+        {{ .TableOfContents }}
+      </div>
+    </aside>
+    {{ end }}
+  </div>
+
+  {{ if .Pages }}
+  <ul class="page-list__items">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if .Description }}<p>{{ .Description }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end }}
