@@ -15,7 +15,9 @@
       <nav aria-label="Footer navigation">
         <ul class="site-footer__links">
           {{ range site.Menus.main }}
+            {{ if not (strings.HasPrefix .URL "http") }}
             <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end }}
           {{ end }}
         </ul>
       </nav>

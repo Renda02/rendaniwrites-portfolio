@@ -18,3 +18,10 @@ exceptions:
   - Technical Writer
   - Frontend Developer
   - Javier
+  - check-image-naming
+  - auto-update-pr
+  - stale-pr-notice
+  - style-check
+  - voice-and-tone
+  - site-updates
+  - GitHub Actions

@@ -23,24 +23,34 @@ title = 'Rendani Luvhengo'
     weight = 1
   [[menu.main]]
     identifier = "work"
-    name = "Work"
+    name = "Case studies"
     url = "/work/"
     weight = 2
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
   [[menu.main]]
     identifier = "resume"
     name = "Resume"
     url = "/resume/"
+    weight = 3
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 4
   [[menu.main]]
     identifier = "api"
     name = "API sample"
     url = "/api/"
     weight = 5
+  [[menu.main]]
+    identifier = "how-i-built-this"
+    name = "How I built this"
+    url = "/how-i-built-this/"
+    weight = 6
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/Renda02/rendaniwrites-portfolio"
+    weight = 7
 
 [[redirects]]
 from = '/about/'
