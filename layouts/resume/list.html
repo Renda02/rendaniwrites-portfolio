@@ -14,4 +14,9 @@
   </ul>
   {{ end }}
 </div>
+<script>
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('.resume-collapse').forEach(function (d) { d.open = true; });
+  });
+</script>
 {{ end }}
