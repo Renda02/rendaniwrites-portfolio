@@ -1,13 +1,13 @@
 ---
 title: "The API consolidation"
 weight: 3
-description: "Led an independent migration of 6 public APIs from Stoplight to GitBook, consolidating API documentation onto the company's main documentation platform and domain."
+description: "Led an independent migration of six public APIs from Stoplight to GitBook, consolidating API documentation onto the company's main documentation platform and domain."
 role: "API Documentation Lead"
 team: "Feature teams, PM, Engineering, IT"
-timeline: "2 sprints, proof of concept to launch"
+timeline: "Two sprints, proof of concept to launch"
 intro: "Retiring a legacy API documentation tool under a hard vendor deadline, and folding API reference documentation into the same platform as the rest of the company's documentation."
 impactSummary: |
-  Led an independent API consolidation, migrating 6 public APIs in 2 sprints onto the same platform and domain as the rest of the company's documentation.
+  Led an independent API consolidation, migrating six public APIs in two sprints onto the same platform and domain as the rest of the company's documentation.
 
   Delivered cost savings by retiring a redundant tool, in collaboration with cross-functional teams, launching ahead of a hard vendor contract cutoff with no room for a parallel-run window.
 tags: ["api", "documentation", "consolidation", "automation", "cost-savings", "stakeholder-management", "risk-management"]
@@ -15,11 +15,11 @@ tags: ["api", "documentation", "consolidation", "automation", "cost-savings", "s
 
 ## Overview
 
-This case study covers an API documentation migration I led independently: moving public documentation for 6 application programming interfaces (APIs) from Stoplight to GitBook.
+This case study covers an API documentation migration I led independently: moving public documentation for six application programming interfaces (APIs) from Stoplight to GitBook.
 
 The project followed an earlier large-scale documentation migration I also led, moving 4,000+ pages onto GitBook with zero breaking changes and 600+ redirects. This project applied the same discipline to a smaller but technically trickier scope: live, spec-driven API reference documentation.
 
-Scope: 6 public APIs, all authored from OpenAPI specs and previously published through Stoplight.
+Scope: six public APIs, all authored from OpenAPI specs and previously published through Stoplight.
 
 Unlike some documentation migrations, this one ran without a content freeze. The company had already agreed not to renew the Stoplight contract, which set a hard deadline that made an extended freeze or parallel-run window impractical. Launch landed just one to two weeks before that contract ended.
 
@@ -64,13 +64,13 @@ This early involvement was necessary because GitBook, as the authoring tool, has
 
 ### Running a proof of concept first
 
-Before committing to a full rollout, I built a proof of concept covering all 6 APIs in scope, migrating their documentation into GitBook. To validate the new tool from a user's perspective, I brought in an engineer from the support team to interact with the migrated documentation directly and give feedback on how it looked and worked.
+Before committing to a full rollout, I built a proof of concept covering all six APIs in scope, migrating their documentation into GitBook. To validate the new tool from a user's perspective, I brought in an engineer from the support team to interact with the migrated documentation directly and give feedback on how it looked and worked.
 
 Integration testing during this phase revealed a critical blocking issue in how feature teams had structured the existing OpenAPI specs.
 
 ### The challenge
 
-GitBook generates documentation pages strictly from the `tags` property on each OpenAPI operation. Stoplight didn't require this property. As a result, the current specs, which worked fine in Stoplight, produced broken output in GitBook. Pages rendered under a generic "Default" title instead of the actual endpoint name. In the worst case, GitBook generated no page at all. This issue affected the OpenAPI spec file for every one of the 6 APIs in scope.
+GitBook generates documentation pages strictly from the `tags` property on each OpenAPI operation. Stoplight didn't require this property. As a result, the current specs, which worked fine in Stoplight, produced broken output in GitBook. Pages rendered under a generic "Default" title instead of the actual endpoint name. In the worst case, GitBook generated no page at all. This issue affected the OpenAPI spec file for every one of the six APIs in scope.
 
 Feature teams, not the documentation team, owned each API's OpenAPI spec. Fixing it meant engaging every team to update the spec they owned.
 
@@ -102,7 +102,7 @@ With a top-level tags definition and a tags property on every operation, GitBook
 
 ### Getting the fix into feature teams' hands
 
-I coordinated the tagging work across all 6 APIs, working with each owning team to:
+I coordinated the tagging work across all six APIs, working with each owning team to:
 
 - Add a top-level tags definition, with a page title and description for each tag.
 - Add a tags property to every operation, so GitBook could render it correctly.
@@ -140,10 +140,10 @@ This was a documentation and domain consolidation, not a change to the underlyin
 
 ## What I'd do differently
 
-The friction with that one feature team points to the first thing I would change if I ran this again: bringing feature teams into the conversation as early as I brought in IT.
+The friction with that one feature team points to the first thing I'd change if I ran this again: bringing feature teams into the conversation as early as I brought in IT.
 
 With IT, I started the conversation before there was a concrete plan, working through requirements and limitations together, and even brought them into calls with GitBook directly. That early involvement surfaced questions and constraints I wouldn't have known to ask about otherwise.
 
-I didn't extend that same early involvement to every feature team, especially the one team I had not worked with before and had no existing working relationship with. Looping feature teams in earlier, before they locked in their own sprint planning, would have let them account for this work upfront instead of treating it as a late addition to already-committed priorities.
+I didn't extend that same early involvement to every feature team, especially the one team I hadn't worked with before and had no existing working relationship with. Looping feature teams in earlier, before they locked in their own sprint planning, would have let them account for this work upfront instead of treating it as a late addition to already-committed priorities.
 
-The second thing I would change: after fixing the missing tags across all 6 specs, I never added anything to stop the same issue from coming back. The fix relied on every feature team remembering to add a tags property to any new endpoint they created. A Spectral or Redocly CLI rule in the GitHub Actions workflow, requiring both a tags property and the x-page-title and x-page-description extensions on every operation, would have caught this automatically for any team, on any future endpoint, instead of relying on memory.
+The second thing I'd change: after fixing the missing tags across all six specs, I never added anything to stop the same issue from coming back. The fix relied on every feature team remembering to add a tags property to any new endpoint they created. A Spectral or Redocly CLI rule in the GitHub Actions workflow, requiring both a tags property and the x-page-title and x-page-description extensions on every operation, would have caught this automatically for any team, on any future endpoint, instead of relying on memory.

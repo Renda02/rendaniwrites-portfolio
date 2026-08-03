@@ -4,10 +4,10 @@ weight: 2
 description: "Built an AI-driven localization pipeline for a new market launch, translating 9,000+ documentation files while embedding automation into the existing docs platform."
 role: "Documentation Platform Owner"
 team: "PM, Engineering, Infra, Translation agency"
-timeline: "2 sprints, five weeks each"
+timeline: "Two sprints, five weeks each"
 intro: "Building an AI-driven localization pipeline to support a new market launch, embedded into the existing docs platform without disrupting how the team worked."
 impactSummary: |
-  Led an AI-driven localization pipeline for a new market launch, translating 9,000+ files into the target language in 2 sprints, with zero disruption to how contributors already worked.
+  Led an AI-driven localization pipeline for a new market launch, translating 9,000+ files into the target language in two sprints, with zero disruption to how contributors already worked.
 
   Validated AI-translation quality before building anything, then embedded automation directly into the existing pipeline — now scaling to restricted documentation and engineering translations.
 tags: ["documentation", "localization", "automation", "ai", "cross-functional-collaboration", "risk-management"]
@@ -15,7 +15,7 @@ tags: ["documentation", "localization", "automation", "ai", "cross-functional-co
 
 ## Background
 
-The company was entering a new international market. That meant 3 things needed to happen before the launch:
+The company was entering a new international market. That meant three things needed to happen before the launch:
 
 - Prospect customers needed to understand the product in the local language
 - The support team needed localized documentation to train on
@@ -36,7 +36,7 @@ The requirement was clear. Everything else wasn't. Translate all product documen
 - Embed translation into the existing docs pipeline - not build something separate
 - Automate as much as possible, building on what was already there
 - Choose tools that supported that automation and our existing pipeline rather than creating new manual work
-- Start with product documentation only not because that was the limit, but because building right for 1 requirement is how you build something that scales
+- Start with product documentation only not because that was the limit, but because building right for one requirement is how you build something that scales
 
 **How I led this, from tool selection to launch:**
 
@@ -52,9 +52,9 @@ I was responsible for the content audit and tool evaluation, pipeline design and
 
 Before looking at any tool or speaking to any vendor, I did a content audit - mapping our existing tooling, formatting types, and docs structure. The goal was to know exactly what to look for when we started exploring vendors, and to make sure whatever tool we chose wouldn't disrupt how technical writers were already working.
 
-I involved engineering from the beginning because they would also be translating their application strings using the same tool. This meant the localization tool had to support both documentation syntax and code syntax - and having engineering in the vendor discovery calls meant we could cover both needs in 1 conversation.
+I involved engineering from the beginning because they would also be translating their application strings using the same tool. This meant the localization tool had to support both documentation syntax and code syntax - and having engineering in the vendor discovery calls meant we could cover both needs in one conversation.
 
-The PM identified 2 vendors with strong reputations. We ran discovery calls with both, asking questions based on what we already knew from the content audit.
+The PM identified two vendors with strong reputations. We ran discovery calls with both, asking questions based on what we already knew from the content audit.
 
 We chose Crowdin because it supported all our syntaxes - documentation formatting and code. The other tool handled documentation well but didn't cover code syntax cleanly. Since both teams needed to use the same platform, Crowdin was the right fit.
 
@@ -68,7 +68,7 @@ Fit over features. The best tool is the one your team doesn't have to think abou
 
 ### Validating translation quality before building anything
 
-Before designing anything, we needed to answer 1 question: was AI translation good enough for our documentation?
+Before designing anything, we needed to answer one question: was AI translation good enough for our documentation?
 
 The PM aligned with the translation agency on what acceptable quality looked like and what to watch out for. My job was to learn the tool and produce the sample.
 
@@ -80,7 +80,7 @@ Their verdict: acceptable, with minor corrections.
 
 **Using AI to translate was the goal. One validation call confirmed it was the right call.**
 
-AI-first translation with a human review layer became possible because we validated the assumption before building anything around it. If the quality had not been acceptable, the pipeline design would have been completely different - more human involvement, different tooling, different costs.
+AI-first translation with a human review layer became possible because we validated the assumption before building anything around it. If the quality hadn't been acceptable, the pipeline design would have been completely different - more human involvement, different tooling, different costs.
 
 The agency's feedback also told us what to watch out for - which later informed the terminology files and translation memory work.
 
@@ -104,7 +104,7 @@ A change made in the authoring tool syncs automatically to GitHub. GitHub trigge
 
 Contributors never have to touch Crowdin. Translation happens in the background.
 
-I presented the pipeline diagram to the infrastructure (infra) team - including the architect responsible for the repo. This wasn't just for sign-off. I needed 3 things from that meeting: confirmation that adding Crowdin would work within the existing GitHub structure, their buy-in so I would have their support when things broke, and time for them to plan their sprint around the permissions and credentials a new tool requires.
+I presented the pipeline diagram to the infrastructure (infra) team - including the architect responsible for the repo. This wasn't just for sign-off. I needed three things from that meeting: confirmation that adding Crowdin would work within the existing GitHub structure, their buy-in so I'd have their support when things broke, and time for them to plan their sprint around the permissions and credentials a new tool requires.
 
 The infrastructure team approved the pipeline. We aligned on GitHub Actions as the automation layer.
 
@@ -120,7 +120,7 @@ I collaborated closely with an engineer on building the workflows. I provided th
 
 The PM and I stayed aligned throughout. I kept a Confluence one-pager updated weekly so the PM always had visibility on progress without needing a status call.
 
-During testing, I noticed the AI was translating product names and changing markdown syntax - and when the syntax changed, content didn't render correctly back in the authoring tool. I worked with an AI engineer to fix the prompt - adding clear rules for what the AI can translate, what it can't translate, and that it must never change markdown syntax. Getting the prompt right took exploration. It wasn't a 1-time fix.
+During testing, I noticed the AI was translating product names and changing markdown syntax - and when the syntax changed, content didn't render correctly back in the authoring tool. I worked with an AI engineer to fix the prompt - adding clear rules for what the AI can translate, what it can't translate, and that it must never change markdown syntax. Getting the prompt right took exploration. It wasn't a one-time fix.
 
 I also assigned a technical writer to build a product name file - a list of terms the AI must never translate. Before they could do that, I onboarded them on Crowdin. The technical writer then met with the product owner and engineering manager to align on which terms to protect across both documentation and engineering. Once approved, the technical writer uploaded the terminology file to Crowdin.
 
@@ -130,9 +130,9 @@ This cross-functional alignment was necessary before we could add a single prote
 
 Docs was the first team on Crowdin. Once the pipeline was running for documentation, I onboarded engineering so they could begin translating their application strings on the same platform.
 
-While I built and tested the pipeline, 2 other workstreams ran in parallel.
+While I built and tested the pipeline, two other workstreams ran in parallel.
 
-I researched how well-known documentation sites handle multiple languages, looking at what path conventions were standard in the industry. I also asked the authoring tool vendor directly what other clients in similar situations were doing. From that research I proposed 2 domain options to the PM. The PM chose one.
+I researched how well-known documentation sites handle multiple languages, looking at what path conventions were standard in the industry. I also asked the authoring tool vendor directly what other clients in similar situations were doing. From that research I proposed two domain options to the PM. The PM chose one.
 
 I also had meetings directly with the authoring tool vendor to work out how to publish English and localized documentation side by side - letting a user view any page in English and switch to the localized version without losing their place.
 
@@ -162,7 +162,7 @@ During busy release cycles, it was easy to forget. This caused repeated failures
 
 Sometimes the translation changed the mapping of files - adding extra strings to the path or removing strings the authoring tool expected. When this happened, the pages wouldn't render.
 
-This showed up in 2 ways: I caught some breaks during PR review, others only became visible after merging. New pages were the most common trigger - a new English page would have a clean path, but Crowdin would sometimes alter it during translation, breaking the table of contents or navigation.
+This showed up in two ways: I caught some breaks during PR review, others only became visible after merging. New pages were the most common trigger - a new English page would have a clean path, but Crowdin would sometimes alter it during translation, breaking the table of contents or navigation.
 
 This happened multiple times and was a recurring issue throughout the project.
 
@@ -179,7 +179,7 @@ The current workaround is to maintain those snippets manually outside the automa
 ## Key results
 
 - 9,000+ documentation files translated from English to the target language
-- Delivered in under 2 sprints
+- Delivered in under two sprints
 - Minimum viable product (MVP) scope maintained - product documentation only, as required
 - Pipeline built into the existing infrastructure with no change to contributor workflows
 - Terminology files and prompt rules protecting product names and syntax across every translation run
@@ -194,7 +194,7 @@ The translation was never the hard part. Making it disappear into how the team a
 
 **Define process ownership before launch, not after**
 
-The branch deletion problem kept surfacing because nobody had defined it as part of their workflow - we assumed it. I would define ownership of every manual step in the release process before launch, agree on it with the team, and document it. Assumptions in a shared pipeline become everyone's problem.
+The branch deletion problem kept surfacing because nobody had defined it as part of their workflow - we assumed it. I'd define ownership of every manual step in the release process before launch, agree on it with the team, and document it. Assumptions in a shared pipeline become everyone's problem.
 
 **Align on terminology ownership as the product grows**
 
@@ -206,7 +206,7 @@ The team had started using reusable content snippets in the authoring tool. When
 
 **Agree on a failure protocol with infra before launch**
 
-The timeout issue was difficult to catch before real release scale - that I wouldn't change. But what I would change is agreeing with infra upfront on what happens when something breaks at scale. Having that protocol in place before the first failure would have reduced the time between problem and fix.
+The timeout issue was difficult to catch before real release scale - that I wouldn't change. But what I'd change is agreeing with infra upfront on what happens when something breaks at scale. Having that protocol in place before the first failure would have reduced the time between problem and fix.
 
 ---
 
