@@ -17,22 +17,22 @@ Builds to `public/` (gitignored) with `hugo`.
 ## Site structure
 
 - **About** (`/`): who I am
-- **Blog** (`/blog/`): posts
-- **Work** (`/work/`): case studies
 - **API sample** (`/api/`): playground
+- **Blog** (`/blog/`): posts
 - **Resume** (`/resume/`): work history
+- **Work** (`/work/`): case studies
 
 ## Repo structure
 
 ![Visualization of this repository](./diagram.svg)
 
+- `.claude/skills/`: Claude Code skills used while writing and reviewing content
+- `archetypes/`: front matter templates for new content
+- `assets/`: files Hugo processes (e.g. CSS)
 - `content/`: site pages (about, work, projects, blog) in Markdown
 - `layouts/`: Hugo templates and shortcodes
-- `archetypes/`: front matter templates for new content
 - `static/`: images and other files served as-is
-- `assets/`: files Hugo processes (e.g. CSS)
 - `styles/`: Vale style rules for prose linting
-- `.claude/skills/`: Claude Code skills used while writing and reviewing content
 
 ## AI tooling
 
@@ -52,11 +52,11 @@ Automated workflows that run on their own, triggered by something happening in t
 
 | Workflow | Runs when | What it does |
 |---|---|---|
-| [vale.yml](.github/workflows/vale.yml) | A pull request changes site content | Checks spelling, terminology, and style |
+| [auto-update-pr.yml](.github/workflows/auto-update-pr.yml) | New changes land on the main branch | Keeps other open pull requests in sync with the latest changes, so they don't fall behind and conflict |
 | [check-image-naming.yml](.github/workflows/check-image-naming.yml) | A pull request adds a new image | Checks the image follows a consistent naming pattern |
 | [repo-visualizer.yml](.github/workflows/repo-visualizer.yml) | New changes land on the main branch | Redraws the file-tree picture at the top of this README |
-| [auto-update-pr.yml](.github/workflows/auto-update-pr.yml) | New changes land on the main branch | Keeps other open pull requests in sync with the latest changes, so they don't fall behind and conflict |
 | [stale-pr-notice.yml](.github/workflows/stale-pr-notice.yml) | Every Monday morning | Flags pull requests that have sat untouched for two weeks or more |
+| [vale.yml](.github/workflows/vale.yml) | A pull request changes site content | Checks spelling, terminology, and style |
 
 Netlify also builds a deploy preview for every pull request, independently of the workflows above, then deploys to production automatically once it merges to the main branch.
 
@@ -66,9 +66,9 @@ A skill is a saved set of instructions I've gave Claude to follow for a specific
 
 | Skill | What it does | Command |
 |---|---|---|
+| [site-updates](.claude/skills/site-updates/) | Reads recent commits and writes a plain-English changelog entry, deciding what's actually worth telling a reader about | `/site-updates` |
 | [style-check](.claude/skills/style-check/) | Reviews writing across the whole site for consistency, catching what Vale structurally can't: the same term worded two different ways on different pages, a sentence that repeats something said elsewhere, a section whose structure doesn't match its neighbors | `/style-check` |
 | [voice-and-tone](.claude/skills/voice-and-tone/) | Checks a blog draft has one clear point, a solid structure, and a strong ending, the way an editor would | `/voice-and-tone` |
-| [site-updates](.claude/skills/site-updates/) | Reads recent commits and writes a plain-English changelog entry, deciding what's actually worth telling a reader about | `/site-updates` |
 
 ## Commit conventions
 
