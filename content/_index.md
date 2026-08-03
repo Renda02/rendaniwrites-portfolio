@@ -1,6 +1,6 @@
 ---
 title: "Hey, I'm Rendani"
-description: "I help teams build documentation infrastructure & AI-embedded workflows so they can scale with confidence and zero disruption."
+description: "Documentation Engineer helping teams build documentation infrastructure and AI-embedded workflows so they can scale with confidence and zero disruption."
 ---
 
 What I've learned through my career is it was never about what you already knew. It was about figuring things out, and if you didn't know, building trust fast enough with people to help fill in the gaps.
