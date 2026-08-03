@@ -14,18 +14,18 @@ I work at the intersection of engineering and documentation: translating technic
 
 ## Skills
 
-- **Documentation platform leadership**: owning end-to-end documentation migration and platform architecture
-- **Process optimization**: redesigning documentation lifecycles and audit processes for measurable efficiency gains
-- **Information architecture and content design**: content taxonomies, template hierarchies, and topic-type frameworks at scale
-- **Stakeholder management**: aligning engineering, legal, security, and product around one plan
-- **Risk management**: content freezes, rollback plans, and zero-breaking-change launches at scale
-- **Cross-functional collaboration**: partnering with engineering, PMs, IT, and translation vendors
-- **Docs-as-code and version control**: Git-based workflows, PR review, and CI/CD-integrated publishing
-- **Systems diagnostics and troubleshooting**: root-cause analysis and self-service resolution tooling
 - **AI and automation workflow design**: building AI-embedded pipelines and prompt-engineering rules
 - **API documentation and consolidation**: OpenAPI-driven docs, GitHub Actions publishing workflows
-- **Localization program management**: vendor discovery through production-scale translation pipelines
 - **Cost optimization**: retiring redundant tools, delivering measurable annual savings
+- **Cross-functional collaboration**: partnering with engineering, PMs, IT, and translation vendors
+- **Docs-as-code and version control**: Git-based workflows, PR review, and CI/CD-integrated publishing
+- **Documentation platform leadership**: owning end-to-end documentation migration and platform architecture
+- **Information architecture and content design**: content taxonomies, template hierarchies, and topic-type frameworks at scale
+- **Localization program management**: vendor discovery through production-scale translation pipelines
+- **Process optimization**: redesigning documentation lifecycles and audit processes for measurable efficiency gains
+- **Risk management**: content freezes, rollback plans, and zero-breaking-change launches at scale
+- **Stakeholder management**: aligning engineering, legal, security, and product around one plan
+- **Systems diagnostics and troubleshooting**: root-cause analysis and self-service resolution tooling
 
 ---
 
