@@ -9,11 +9,11 @@ I started in Quality Management Systems, where I learned how to turn unstructure
 
 Three weeks into my first technical writing role, my manager left and I became the solo writer. I owned and maintained the documentation lifecycle using a docs-as-code approach in an agile environment, and built the relationships that kept me ahead of what was coming. That instinct became the pattern for every role after: walk into the mess, build the trust, own what's needed. Read the blog post on [How I became a solo technical writer](/blog/how-i-became-a-solo-technical-writer).
 
-I went on to join a team mid-restructuring, ending up owning the documentation platform end to end. Over the last two years, I've led migrations, built documentation infrastructure, and introduced new ways of working that scale with both teams and tools. Read the case study on [The documentation localization](/work/localisation-project).
+I went on to join a team mid-restructuring, ending up owning the documentation platform end to end. Over the last two years, I've led migrations, built documentation infrastructure, and introduced new ways of working that scale with both teams and tools. Read the case study on [The documentation migration](/work/documentation-platform-migration).
 
 Put me in charge of something, and I'll ask the right questions, figure out what's needed, and get it done, without breaking what's already working.
 
-Curious what else I've built? [See all my work](/work/).
+Curious what else I've built? [See all my case studies](/work/).
 
 ## How I work
 
@@ -21,7 +21,7 @@ Curious what else I've built? [See all my work](/work/).
 - I turn complex priorities into steps a team can execute.
 - I figure out how to move forward when something's behind or stuck.
 
-Underneath all of it is the same standard: good documentation infrastructure and tooling give every team using it a clear, easy way to work.
+Underneath all of it's the same standard: good documentation infrastructure and tooling give every team using it a clear, easy way to work.
 
 ## Personal life
 
