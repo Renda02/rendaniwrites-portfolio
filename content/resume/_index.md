@@ -14,18 +14,18 @@ I work at the intersection of engineering and documentation: translating technic
 
 ## Skills
 
-- **Documentation platform leadership**: owning end-to-end documentation migration and platform architecture
-- **Process optimization**: redesigning documentation lifecycles and audit processes for measurable efficiency gains
-- **Information architecture and content design**: content taxonomies, template hierarchies, and topic-type frameworks at scale
-- **Stakeholder management**: aligning engineering, legal, security, and product around one plan
-- **Risk management**: content freezes, rollback plans, and zero-breaking-change launches at scale
-- **Cross-functional collaboration**: partnering with engineering, PMs, IT, and translation vendors
-- **Docs-as-code and version control**: Git-based workflows, PR review, and CI/CD-integrated publishing
-- **Systems diagnostics and troubleshooting**: root-cause analysis and self-service resolution tooling
 - **AI and automation workflow design**: building AI-embedded pipelines and prompt-engineering rules
 - **API documentation and consolidation**: OpenAPI-driven docs, GitHub Actions publishing workflows
-- **Localization program management**: vendor discovery through production-scale translation pipelines
 - **Cost optimization**: retiring redundant tools, delivering measurable annual savings
+- **Cross-functional collaboration**: partnering with engineering, PMs, IT, and translation vendors
+- **Docs-as-code and version control**: Git-based workflows, PR review, and CI/CD-integrated publishing
+- **Documentation platform leadership**: owning end-to-end documentation migration and platform architecture
+- **Information architecture and content design**: content taxonomies, template hierarchies, and topic-type frameworks at scale
+- **Localization program management**: vendor discovery through production-scale translation pipelines
+- **Process optimization**: redesigning documentation lifecycles and audit processes for measurable efficiency gains
+- **Risk management**: content freezes, rollback plans, and zero-breaking-change launches at scale
+- **Stakeholder management**: aligning engineering, legal, security, and product around one plan
+- **Systems diagnostics and troubleshooting**: root-cause analysis and self-service resolution tooling
 
 ---
 
@@ -39,7 +39,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
 
 **Key achievements:**
 
-- Led a team of 7 to migrate 4,000+ pages of product documentation from Confluence to GitBook in under 4 months, resulting in:
+- Led a team of seven to migrate 4,000+ pages of product documentation from Confluence to GitBook in under four months, resulting in:
   - A zero-breaking-change launch, supported by 600+ mapped redirects
   - A new documentation lifecycle process that the team adopted going forward
   - IT and security sign-off for the Okta SSO integration ahead of cutover, with no delays
@@ -47,7 +47,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
   - €35,000 in annual cost savings
   - A zero-breaking-change domain transition
   - A consolidated developer experience across documentation portals
-- Led a Japanese localization initiative from vendor discovery to MVP in 2 sprints, resulting in a Crowdin-GitHub-S3 pipeline translating 9,000+ pages, including:
+- Led a Japanese localization initiative from vendor discovery to MVP in two sprints, resulting in a Crowdin-GitHub-S3 pipeline translating 9,000+ files, including:
   - Built prompt-engineering rules with an AI engineer to prevent mistranslated product names and broken markdown syntax.
   - Onboarded engineering onto Crowdin, expanding the platform beyond the documentation team.
 - Created and maintained documentation across 5+ products, in collaboration with Product Managers and engineering, translating complex systems into structured, accessible content.
@@ -66,7 +66,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
 - Coordinated staging-to-production branch handoffs with feature development teams to keep the API documentation pipeline aligned with release cycles.
 - Collaborated on a GitHub repository naming-convention cleanup for in-product documentation, standardizing file/folder structure to lowercase with zero breaking changes to production.
 
-<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, Amazon S3, AI automation, prompt engineering, Claude Code, ChatGPT, CustomGPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
+<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, AI automation, prompt engineering, Claude Code, ChatGPT, CustomGPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
 {{% /collapse %}}
 
 ### Technical Writer
@@ -103,7 +103,7 @@ Solo technical writer owning the documentation lifecycle across 6+ cross-functio
 
 **Delpero:**
 
-- Delivered login page layout UI for dashboards to production within a 2-week sprint in an Agile environment.
+- Delivered login page layout UI for dashboards to production within a two-week sprint in an Agile environment.
 - Collaborated with a cross-functional team of 5+ developers using best practices.
 - Designed admin layout following UI principles and design thinking using Figma.
 
@@ -139,11 +139,11 @@ Solo technical writer owning the documentation lifecycle across 6+ cross-functio
 - **AI Agent Bootcamp – Certificate of Distinction** – Lonely Octopus (2025)
 - **AI Engineering Onramp** – Maven (2025)
 - **AI Product Management Course** – Maven (2025)
-- **API Fundamentals for Practitioners** – LaunchAny (2024)
-- **Postman API Fundamentals Student Expert** (2024)
+- **API Fundamentals for Practitioners** – LaunchAny (October 2024)
+- **Postman API Fundamentals Student Expert** (May 2024)
 - **Writing in Plain Language** – LinkedIn Learning (2023)
 - **Creating API Documentation** – LinkedIn Learning (2022)
-- **Technical Writer Course** – Technical Writer HQ (2022)
+- **Technical Writer Course** – Technical Writer HQ (July 2022)
 - **SheCodes React Workshop** – SheCodes (2020)
 - **SheCodes Plus Workshop** – SheCodes (2020)
 - **SheCodes Coding Workshop** – SheCodes (2020)

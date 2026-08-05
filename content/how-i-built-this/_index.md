@@ -20,9 +20,9 @@ I built this with Claude Code. I used Trello to track my planning, one task at a
  
 The pipeline has two layers.
  
-**Deterministic**: Vale, image naming, PR syncing, stale-PR notices, and the repo diagram. These run on their own in continuous integration (CI), triggered by a pull request or a schedule.
+**Deterministic**: image naming, PR syncing, repo diagram, stale-PR notices, and Vale. These run on their own in continuous integration (CI), triggered by a pull request or a schedule.
  
-**Probabilistic**: 3 Claude skills, `/style-check`, `/voice-and-tone`, `/site-updates`. Each one is triggered manually and hands the decision back to me.
+**Probabilistic**: three Claude skills, `/site-updates`, `/style-check`, `/voice-and-tone`. Each one is triggered manually and hands the decision back to me.
  
 For the full breakdown, see [the pipeline overview](/pipeline/#what-each-layer-demonstrates) and [the README](https://github.com/Renda02/rendaniwrites-portfolio).
  
