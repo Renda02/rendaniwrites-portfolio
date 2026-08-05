@@ -16,7 +16,7 @@ The checks split into two layers: GitHub Actions run on their own in CI, and ski
 | [auto-update-pr](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/auto-update-pr.yml) | Push to main | Nothing. Keeps other PRs from drifting out of date. |
 | [Image naming](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/check-image-naming.yml) | Pull request adds an image | Blocks merge on a naming mismatch. |
 | [Repo diagram](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/repo-visualizer.yml) | Push to main | Nothing. Cosmetic only. |
-| [Stale PR detection](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/stale-pr-notice.yml) | Every Monday | Nothing. Flags PRs untouched 2+ weeks. |
+| [Stale PR detection](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/stale-pr-notice.yml) | Every Monday | Nothing. Flags PRs untouched 3+ days. |
 | [Vale](https://github.com/Renda02/rendaniwrites-portfolio/blob/main/.github/workflows/vale.yml) | Pull request | Comments on the PR. Doesn't block merge. |
 
 ### Skills
@@ -45,7 +45,7 @@ Each workflow triggers on an event in this repo, or a schedule.
 
 - **auto-update-pr**: keeps every open PR synced with main automatically, so branches don't drift apart and collide with conflicts when they finally merge.
 - **check-image-naming**: hard-stops a merge on a naming mismatch. Generic names like `image1.png` become untrackable once a repo has more than a few images, so this is the one rule enforced without exception.
-- **stale-pr-notice**: flags any PR untouched for 2+ weeks, so a stalled branch gets finished or closed instead of becoming forgotten dead weight.
+- **stale-pr-notice**: flags any PR untouched for 3+ days, so a stalled branch gets finished or closed instead of becoming forgotten dead weight.
 - **Vale**: runs `styles/Portfolio`, one custom rule set (some rules adapted from Google's style guide, some written from scratch) that checks spelling, terminology, and style on every PR. It's advisory only: nothing blocks a merge, since one reviewer already reads every PR.
 
 ### How skills work

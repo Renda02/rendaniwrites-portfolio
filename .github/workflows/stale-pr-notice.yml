@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
-          days-before-pr-stale: 14
+          days-before-pr-stale: 3
           days-before-pr-close: -1
-          stale-pr-message: "This PR has been open for 14+ days with no activity."
+          stale-pr-message: "This PR has been open for 3+ days with no activity."
           stale-pr-label: stale
           days-before-issue-stale: -1
           days-before-issue-close: -1

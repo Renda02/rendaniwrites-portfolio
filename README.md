@@ -55,7 +55,7 @@ Automated workflows that run on their own, triggered by something happening in t
 | [auto-update-pr.yml](.github/workflows/auto-update-pr.yml) | New changes land on the main branch | Keeps other open pull requests in sync with the latest changes, so they don't fall behind and conflict |
 | [check-image-naming.yml](.github/workflows/check-image-naming.yml) | A pull request adds a new image | Checks the image follows a consistent naming pattern |
 | [repo-visualizer.yml](.github/workflows/repo-visualizer.yml) | New changes land on the main branch | Redraws the file-tree picture at the top of this README |
-| [stale-pr-notice.yml](.github/workflows/stale-pr-notice.yml) | Every Monday morning | Flags pull requests that have sat untouched for two weeks or more |
+| [stale-pr-notice.yml](.github/workflows/stale-pr-notice.yml) | Every Monday morning | Flags pull requests that have sat untouched for three days or more |
 | [vale.yml](.github/workflows/vale.yml) | A pull request changes site content | Checks spelling, terminology, and style |
 
 Netlify also builds a deploy preview for every pull request, independently of the workflows above, then deploys to production automatically once it merges to the main branch.
