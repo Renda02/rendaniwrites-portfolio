@@ -47,7 +47,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
   - €35,000 in annual cost savings
   - A zero-breaking-change domain transition
   - A consolidated developer experience across documentation portals
-- Led a Japanese localization initiative from vendor discovery to MVP in two sprints, resulting in a Crowdin-GitHub-S3 pipeline translating 9,000+ files, including:
+- Led a Japanese localization initiative from vendor discovery to MVP in two sprints, resulting in a Crowdin-GitHub pipeline translating 9,000+ files, including:
   - Built prompt-engineering rules with an AI engineer to prevent mistranslated product names and broken markdown syntax.
   - Onboarded engineering onto Crowdin, expanding the platform beyond the documentation team.
 - Created and maintained documentation across 5+ products, in collaboration with Product Managers and engineering, translating complex systems into structured, accessible content.
@@ -66,7 +66,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
 - Coordinated staging-to-production branch handoffs with feature development teams to keep the API documentation pipeline aligned with release cycles.
 - Collaborated on a GitHub repository naming-convention cleanup for in-product documentation, standardizing file/folder structure to lowercase with zero breaking changes to production.
 
-<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, Amazon S3, AI automation, prompt engineering, Claude Code, ChatGPT, CustomGPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
+<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, AI automation, prompt engineering, Claude Code, ChatGPT, CustomGPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
 {{% /collapse %}}
 
 ### Technical Writer
