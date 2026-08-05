@@ -47,7 +47,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
   - €35,000 in annual cost savings
   - A zero-breaking-change domain transition
   - A consolidated developer experience across documentation portals
-- Led a Japanese localization initiative from vendor discovery to MVP in two sprints, resulting in a Crowdin-GitHub-S3 pipeline translating 9,000+ pages, including:
+- Led a Japanese localization initiative from vendor discovery to MVP in two sprints, resulting in a Crowdin-GitHub-S3 pipeline translating 9,000+ files, including:
   - Built prompt-engineering rules with an AI engineer to prevent mistranslated product names and broken markdown syntax.
   - Onboarded engineering onto Crowdin, expanding the platform beyond the documentation team.
 - Created and maintained documentation across 5+ products, in collaboration with Product Managers and engineering, translating complex systems into structured, accessible content.

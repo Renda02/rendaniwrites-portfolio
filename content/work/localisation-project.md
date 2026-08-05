@@ -9,7 +9,7 @@ intro: "Building an AI-driven localization pipeline to support a new market laun
 impactSummary: |
   Led an AI-driven localization pipeline for a new market launch, translating 9,000+ files into the target language in two sprints, with zero disruption to how contributors already worked.
 
-  Validated AI-translation quality before building anything, then embedded automation directly into the existing pipeline — now scaling to restricted documentation and engineering translations.
+  Validated AI-translation quality before building anything, then embedded automation directly into the existing pipeline. It's now scaling to restricted documentation and engineering translations.
 tags: ["documentation", "localization", "automation", "ai", "cross-functional-collaboration", "risk-management"]
 ---
 
