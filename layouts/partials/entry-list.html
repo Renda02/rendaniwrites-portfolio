@@ -11,7 +11,9 @@
     <p class="blog-entry__excerpt">{{ $first | markdownify }}</p>
     {{ partial "post-tags.html" . }}
     {{ else }}
-    {{ with .Description }}<p class="blog-entry__excerpt">{{ . }}</p>{{ end }}
+    {{ with findRE "(?s)<p>.*?</p>" .Content 1 }}
+    <p class="blog-entry__excerpt">{{ (replaceRE "^<p>|</p>$" "" (index . 0)) | safeHTML }}</p>
+    {{ end }}
     {{ end }}
   </li>
   {{ end }}
