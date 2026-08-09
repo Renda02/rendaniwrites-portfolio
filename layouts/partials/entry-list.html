@@ -12,7 +12,11 @@
     {{ partial "post-tags.html" . }}
     {{ else }}
     {{ with findRE "(?s)<p>.*?</p>" .Content 1 }}
-    <p class="blog-entry__excerpt">{{ (replaceRE "^<p>|</p>$" "" (index . 0)) | safeHTML }}</p>
+    {{ $inner := replaceRE "^<p>|</p>$" "" (index . 0) }}
+    {{ $words := split ($inner | htmlUnescape | plainify) " " }}
+    {{ $excerpt := delimit (first 25 $words) " " }}
+    {{ if gt (len $words) 25 }}{{ $excerpt = printf "%s …" $excerpt }}{{ end }}
+    <p class="blog-entry__excerpt">{{ $excerpt }}</p>
     {{ end }}
     {{ end }}
   </li>
