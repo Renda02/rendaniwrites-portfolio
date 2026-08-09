@@ -2,12 +2,12 @@
 date: 2026-02-06
 title: "How I built an AI playbook for clear communication"
 description: "What an AI playbook actually is, and how I built one to stop rewriting the same stakeholder update for every audience."
-tags: ["ai playbook", "communication", "cross-functional-collaboration", "productivity"]
+tags: ["ai-playbook", "stakeholder-communication", "productivity"]
 ---
 
 Have you ever tried to delegate something, only to think: never mind, it's faster if I just do it myself?
 
-That's what happens when the instructions only ever lived in your head. A playbook writes them down once, so handing the task off, whether to a person or to AI, stops being slower than doing it yourself.
+That's what happens when the instructions only ever lived in your head. A playbook writes them down once, so handing the task off, whether to a person or to AI, is no longer slower than doing it yourself.
 
 ## What is an AI playbook
 
@@ -20,11 +20,13 @@ Every playbook breaks down the same way:
 - **Steps**: your actual process, broken into tasks
 - **Outputs**: what AI hands back to you
 
-A playbook isn't something you get right the first time, either. You write an instruction, run it, and see where the output misses: too formal, too long, the wrong detail emphasized. Then you tighten the instruction and run it again. It's never really finished. It's just accurate enough, for now, for the task you built it for.
+A playbook isn't something you get right the first time, either. You write the steps, give AI the instruction to run the playbook, and see where it misses: too formal, too long, the wrong detail, and then you iterate until it's just accurate enough, for now, for what you built it to do.
+
+To create an AI playbook, you don't need a dedicated platform. Write it once, as plain text, then run it wherever you like: a chatbot, an agent, a multi-agent system, a Custom GPT, or a Project.
 
 ---
 
-I put this into practice by building Master Your Message (MYM), an AI playbook for one specific repeat task: communicating with stakeholders. I built it during Rachel Woods' Think Like an AI Operator Challenge, and it's become my daily tool for stakeholder communication. It's live as a Custom GPT: you can [try it yourself](https://chatgpt.com/g/g-69336ddacc8481919cf45c2120c6b6b8-mym-master-your-message/).
+I put this into practice by building Master Your Message (MYM), an AI playbook for one specific, recurring task: communicating with stakeholders. I built it during Rachel Woods' Think Like an AI Operator Challenge, and it's become my daily tool for stakeholder communication. It's now live as a Custom GPT: you can [try MYM yourself](https://chatgpt.com/g/g-69336ddacc8481919cf45c2120c6b6b8-mym-master-your-message/).
 
 ## Why Master Your Message
 
@@ -44,15 +46,17 @@ MYM stops that rewriting. I answer three questions once, and the structure comes
 
 ## How Master Your Message works
 
+The MYM playbook covers every message type, a status update, a risk escalation, feedback. Only the framework changes. Everything else stays the same. Here's how it works:
+
 **Trigger**: You need to send a message to a stakeholder.
 
 **Inputs**: MYM needs three things before it drafts anything: who you're talking to, what you need from them, and how you're sending it. It asks for whatever's missing, and only that. If your first message already answers two of the three, it asks just the one that's left; if you give a vague answer, it tells you exactly what it still needs before it'll draft.
 
 **Steps**:
 
-1. **Safety check.** Before generating anything, MYM screens for two different kinds of risk, with two different responses:
+1. **Guardrail.** Before generating anything, MYM screens for two different kinds of risk, with two different responses:
    - **Sensitive info or unprofessional language** (passwords, tokens, customer names, confidential details, profanity, harassment): MYM pauses and asks you to rephrase, then continues.
-   - **Legal, HR, or compliance risk** (firing someone, terminating a contract, reporting misconduct, medical information, security breaches): MYM **won't draft anything**. It stops and directs you to your manager or HR instead. This isn't a message a playbook should be writing for you.
+   - **Legal, HR, or regulatory risk** (firing someone, terminating a contract, reporting misconduct, medical information, security breaches): MYM **won't draft anything**. It stops and directs you to your manager or HR instead. This isn't a message a playbook should be writing for you.
 
 2. **Framework selection.** Based on your answers, MYM matches your scenario to the right structure:
    - **Bottom Line Up Front (BLUF)**: for executives needing decisions
@@ -66,42 +70,23 @@ MYM stops that rewriting. I answer three questions once, and the structure comes
 
 **Outputs**:
 - Framework-structured message, ready to copy and send: no labels, no placeholders left in
-- The framework choice named and explained, so you know why it picked BLUF over PREP
+- The framework choice named and explained
 - A record of which framework fit which scenario, so the same decision doesn't have to be re-made next time
-
-This is also why MYM doesn't need a separate playbook for every message type. A status update, a risk escalation, and a piece of feedback all share the same trigger, inputs, and safety/quality steps. Only the framework in step 2 changes. One playbook, several outputs, instead of a stack of near-identical documents.
-
-MYM will also show its work on request. Ask why it picked a framework, and it doesn't just name one: it maps your own draft back onto the framework's structure line by line ("Point: ...", "Reason: ...") and explains why each piece fits your scenario. It's not just drafting the message; it's teaching you the framework using your own words as the example.
 
 ---
 
-## Example
+## Master Your Message capabilities
 
-I asked MYM to help propose a Crowdin integration to our infrastructure team. Here's what came out the other end:
+Across every scenario, MYM adapts to how much you give it: structuring what's already complete, inferring what it can, and asking for what's missing.
 
-> "Hi [Tech Lead], I'd like to propose integrating Crowdin into our translation workflow. I believe this integration would automate translation updates, reduce the manual effort involved in checking and syncing translations, and make the overall process more reliable and efficient. For example, instead of manually verifying translation changes across environments, Crowdin could automatically synchronize updates with our repositories, helping us keep translations current while reducing the risk of missed or inconsistent updates. Given these benefits, I'd like to align with our infrastructure and architecture before moving forward. Do you think this approach would fit our current setup, or are there any considerations we should evaluate first?"
+Asked to help draft a recruiter follow-up ahead of an interview, with the audience and format already given, it picked BLUF and explained why: a senior audience, an email channel, a clear ask. The result was a clean, structured draft, ready to send.
 
-Here's the context that produced it. My input was a single messy sentence: I wanted to propose a Crowdin integration to a tech lead, to automate translation updates and cut down manual checks, sent via Slack, aiming for alignment on our infrastructure. MYM pulled the audience, goal, and format out of that on its own.
-
-It also told me why it picked PREP over the other three frameworks, before drafting anything: *"Based on your playbook, this is a PREP scenario because you're proposing a technical solution and seeking alignment on an architectural direction."* Not BLUF, because this wasn't a yes/no decision for an executive. Not Observation-Impact-Question, because this isn't feedback. Not Before-After-Bridge, because there's no result to show yet, just a recommendation to make the case for.
-
-The structure underneath the draft above is Point, Reason, Example, Point:
-
-- **Point**: the ask up front ("I'd like to propose integrating Crowdin...")
-- **Reason**: why it matters ("would automate translation updates, reduce the manual effort...")
-- **Example**: concrete proof ("instead of manually verifying translation changes... Crowdin could automatically synchronize")
-- **Point**: the ask restated as a question ("Do you think this approach would fit...")
-
-106 words, no labels, ready to send: less than half the roughly 185 words an unstructured "just write this up" draft runs to, where the actual ask doesn't show up until the last sentence.
-
-MYM also handles messages that don't specify audience or format up front. Asked to draft a proposal to a compliance manager about audit training, with no format stated, it inferred the details and said so before drafting: *"Format: I'm assuming this is an email."* Then it delivered a BLUF-style draft and offered to adjust it shorter, more formal, or for Slack instead.
-
-That's an easy case, though: there was enough context to infer the gap. When a request is missing more than that, MYM doesn't guess; it stops and asks. I once wrote: *"I want to send project update to my manager about API migrations and ask support in getting infra involved to assist with domain switch... I will be sending an email."* No status update, no clarity on who else might be reading it. I answered two of the three details it needed in my next message. It came back asking only for what was still missing: *"One detail still missing: What is the current status of the API migrations?"* Only once I'd answered that did it draft anything. It won't paper over a vague ask with a generic draft. It makes you answer the questions first.
+When I don't specify format or audience, it infers what it can and says so, like assuming a compliance manager proposal was an email. When there's too little to infer, it doesn't guess: for a vague API migration update, it asked for what was missing before writing a word.
 
 ---
 
 ## The results
 
-Time isn't really the honest measure here: MYM drafts in seconds once it has your answers. The payoff is the reader's, not mine. A clear message with the ask up front and only the necessary context means they don't have to read it twice to figure out what you want. That's the whole case for a playbook like this: not speed, but not making the reader do the work you skipped.
+Time isn't really the honest measure here: MYM drafts in seconds once it has your answers. The real payoff is how little time the message takes the reader to read and know what to do next. A clear message with the ask up front means they don't have to read it twice to know what you need from them. That's the whole case for a playbook like this: not speed, but not making the reader do the work you skipped.
 
 If you're wondering where your own playbook might be hiding, check five places: your standard operating procedures, your calendar (what do you do every week without fail?), your to-do list (what keeps showing up?), your project planning (what do you re-explain at the start of every project?), and your wish list (what have you been meaning to systematize but haven't?). Mine was sitting in plain sight. I just hadn't written it down yet.
