@@ -61,7 +61,7 @@ $ git branch -d feature/update-api-docs  # delete local branch
 
 ---
 
-These 6 steps became my daily rhythm. But work doesn't always move in a straight line, and one habit outside the sequence made all the difference.
+These six steps became my daily rhythm. But work doesn't always move in a straight line, and one habit outside the sequence made all the difference.
 
 ## When you need to switch branches mid-change
 

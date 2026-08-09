@@ -1,7 +1,7 @@
 ---
 title: "The documentation migration"
 weight: 1
-description: "Took over a documentation platform migration, leading a 7-person team to zero breaking changes across 4,000+ pages."
+description: "Took over a documentation platform migration, leading a seven-person team to zero breaking changes across 4,000+ pages."
 role: "Documentation Platform Owner / Migration Lead"
 team: "PM, Engineering, IT, Legal, Security"
 timeline: "Scoping and planning through migration execution and launch"
@@ -15,7 +15,7 @@ tags: ["documentation", "migration", "leadership", "stakeholder-management", "ri
 
 ## Background
 
-I joined the company during a restructuring. The documentation team was merging the technical writing and training teams into one. 4 months into my new role, 2 of our technical writers left the organization. One of them had been leading the migration.
+I joined the company during a restructuring. The documentation team was merging the technical writing and training teams into one. Four months into my new role, two of our technical writers left the organization. One of them had been leading the migration.
 
 I was then assigned to lead the migration. This meant:
 
@@ -91,7 +91,7 @@ I believe in bringing allies in early rather than presenting a finished plan.
 
 ## How I led the documentation team
 
-At the time of the migration, we were a team of 7, including me: 4 technical writers and 3 people from the training team. I assigned tasks based on people's strengths rather than splitting evenly, since the team also had to keep maintaining existing documentation in parallel:
+At the time of the migration, we were a team of seven, including me: four technical writers and three people from the training team. I assigned tasks based on people's strengths rather than splitting evenly, since the team also had to keep maintaining existing documentation in parallel:
 
 - One technical writer led content migration, working with an engineer who built a script to help move content into the new tool, and also owned information architecture, flagging anything that needed structural changes and keeping me aligned
 - One technical writer led branding and the landing page redesign, aiming for consistency with the color scheme, terminology, and logo marketing was already using elsewhere
@@ -123,7 +123,7 @@ Beyond individual workstreams, I made sure the team had a shared way of working.
 ## Key results
 
 - 100% of content migrated at launch: a full lift-and-shift, no partial or phased release
-- Unified writing, maintaining, and publishing into one system, eliminating manual handoffs across 2 or more tools
+- Unified writing, maintaining, and publishing into one system, eliminating manual handoffs across two or more tools
 - Documentation became easier to find, with everything now searchable in one place instead of split across systems
 - Defined a new documentation lifecycle and process for the team, still in use 2+ years on
 - Zero breaking changes across 4,000+ pages at launch, despite 600 redirects
@@ -147,8 +147,8 @@ Beyond individual workstreams, I made sure the team had a shared way of working.
 
 ## What I'd do differently
 
-Looking back, there are 2 things I'd change:
+Looking back, there are two things I'd change:
 
-**Engage document owners like legal earlier and directly.** When I joined, I didn't fully understand that legal's documentation, specifically links tied to contracts, carried different stakes than general documentation. This is the same legal redirect issue mentioned earlier: I fixed it fast, but I'd rather have prevented it. If I'd built a direct line with legal from day one, instead of treating their content the same as everything else, we could have avoided the 3 contract links breaking after launch, rather than resolving it reactively within 24 hours.
+**Engage document owners like legal earlier and directly.** When I joined, I didn't fully understand that legal's documentation, specifically links tied to contracts, carried different stakes than general documentation. This is the same legal redirect issue mentioned earlier: I fixed it fast, but I'd rather have prevented it. If I'd built a direct line with legal from day one, instead of treating their content the same as everything else, we could have avoided the three contract links breaking after launch, rather than resolving it reactively within 24 hours.
 
 **Involve engineering and infra earlier, during tool evaluation.** I joined after the team had already selected the tool. I believe involving engineering earlier could have helped surface its limitations sooner. It also would have helped us understand how much support we'd need from them during migration.

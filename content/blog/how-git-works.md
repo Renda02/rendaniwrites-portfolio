@@ -5,7 +5,7 @@ description: "Understanding the four locations where Git stores your changes, an
 tags: ["git", "version-control"]
 ---
 
-Did you know that Git stores your changes in 4 different locations, not two? Understanding this workflow is key to making Git commands finally make sense.
+Did you know that Git stores your changes in four different locations, not two? Understanding this workflow is key to making Git commands finally make sense.
 
 ## What is Git?
 
@@ -13,11 +13,11 @@ Git is a version control system that helps you track changes and manage your fil
 
 If you're working in docs-as-code, Git is how you manage your documentation the same way developers manage code.
 
-So where do your changes actually live in Git? Git has 4 locations where your changes can exist: 3 on your local machine (working directory, staging area, local repository) and 1 remote (the shared repository).
+So where do your changes actually live in Git? Git has four locations where your changes can exist: three on your local machine (working directory, staging area, local repository) and one remote (the shared repository).
 
 ![Git workflow diagram showing four stages](/images/git-four-locations-diagram.png)
 
-## How Git maintains the 4 locations
+## How Git maintains the four locations
 
 - Working directory - where you make your edits
 - Staging area - where changes wait before committing
