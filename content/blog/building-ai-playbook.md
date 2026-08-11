@@ -2,7 +2,7 @@
 date: 2026-02-06
 title: "How I built an AI playbook for clear communication"
 description: "What an AI playbook actually is, and how I built one to stop rewriting the same stakeholder update for every audience."
-tags: ["ai-playbook", "stakeholder-communication", "productivity"]
+tags: ["ai-playbook", "clear-communication", "productivity"]
 ---
 
 Have you ever tried to delegate something, only to think: never mind, it's faster if I just do it myself?
