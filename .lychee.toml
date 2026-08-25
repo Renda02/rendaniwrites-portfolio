@@ -13,6 +13,12 @@ exclude = [
 # site directory when scanning local files.
 root_dir = "./public"
 
+# Absolute links to the site's own domain (e.g. in RSS/tag pages) should
+# be resolved against the local build instead of hitting the network —
+# otherwise they're indistinguishable from external links and can fail
+# in CI due to network/firewall restrictions even though the page exists.
+base_url = "https://rendaniwrites.com"
+
 max_retries = 3
 retry_wait_time = 2
 timeout = 20
