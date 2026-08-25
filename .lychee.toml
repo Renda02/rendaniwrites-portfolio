@@ -1,0 +1,18 @@
+# Lychee link checker config — https://lychee.cli.rs/usage/config/
+
+# Some sites return non-2xx to bots/crawlers even though the link works
+# for a real visitor — don't fail the build on those. (999 is LinkedIn's
+# bot-block status.)
+accept = ["200..=299", "403", "429", "999"]
+
+exclude = [
+  "^mailto:",
+]
+
+# Needed to resolve root-relative links (e.g. /blog/) against the built
+# site directory when scanning local files.
+root_dir = "./public"
+
+max_retries = 3
+retry_wait_time = 2
+timeout = 20
