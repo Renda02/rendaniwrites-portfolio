@@ -1,15 +1,15 @@
 name: Auto-update PR branches
 on:
   push:
-    branches: [main]
+    branches: [main] # run after every merge to main
 
 jobs:
   autoupdate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
-      issues: write
+      contents: write # update the PR branch
+      pull-requests: write # act on open PRs
+      issues: write # comment on each PR it updates (GitHub treats PR comments as issue comments)
     steps:
       - uses: wechuli/pull-request-updater@v2
         with:
