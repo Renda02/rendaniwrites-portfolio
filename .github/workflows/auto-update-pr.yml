@@ -13,5 +13,5 @@ jobs:
     steps:
       - uses: wechuli/pull-request-updater@v2
         with:
-          base: main
+          base: main # only update PRs that target main
           token: ${{ secrets.GITHUB_TOKEN }}
