@@ -1,6 +1,5 @@
 ---
 date: 2026-09-02
-draft: true
 title: "How I keep open PRs in sync with main branch"
 description: "A GitHub Actions workflow that keeps every open PR branch current with main, so CI always tests what will actually merge."
 tags: ["github-actions", "ci-cd", "automation", "workflow"]
