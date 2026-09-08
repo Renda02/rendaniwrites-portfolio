@@ -52,6 +52,7 @@ The `base: main` line scopes it to PRs that target `main`. Leave it out and the 
 
 Even with branches kept current, one thing still needs you: merge conflicts. When a PR's changes collide with what's already on `main`, GitHub marks it as conflicted, and you have to resolve it yourself before it can merge.
 
+The [pull-request-updater](https://github.com/wechuli/pull-request-updater) action is a small addition, but it keeps every open PR branch current with `main` on its own.
+
 Have you run into PRs piling up in your own documentation workflow? I'd like to hear what you've tried.
 
-The [pull-request-updater](https://github.com/wechuli/pull-request-updater) action is a small addition, but it keeps every open PR branch current with `main` on its own.
