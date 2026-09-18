@@ -163,3 +163,4 @@ Branch names should match the commit type: `feat/add-projects-page`, `fix/broken
 - Avoid code blocks without a language specifier
 - Avoid generic image names like `image1.png` or `screenshot.png`
 - Avoid adding a number suffix to every image out of habit — only when it's actually needed to disambiguate
+- Avoid mixed acronym capitalisation: use one form per acronym everywhere (`PoC` for proof of concept; `API`, `MVP`, and `SSO` stay all-caps), and keep the spelled-out form lowercase in prose
