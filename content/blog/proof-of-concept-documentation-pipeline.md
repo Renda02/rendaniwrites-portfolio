@@ -1,5 +1,5 @@
 ---
-date: 2026-09-19
+date: 2026-09-18
 title: "What owning a documentation platform taught me about proof of concept"
 description: "The five things I test before a new tool earns a place in the pipeline, and the one that matters most."
 tags: ["documentation", "proof-of-concept", "workflow", "localization", "risk-management"]
