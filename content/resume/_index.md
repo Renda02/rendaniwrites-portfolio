@@ -66,7 +66,7 @@ Own the documentation platform and tooling for the Product Education team, drivi
 - Coordinated staging-to-production branch handoffs with feature development teams to keep the API documentation pipeline aligned with release cycles.
 - Collaborated on a GitHub repository naming-convention cleanup for in-product documentation, standardizing file/folder structure to lowercase with zero breaking changes to production.
 
-<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, AI automation, prompt engineering, Claude Code, ChatGPT, CustomGPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
+<p class="tech-stack"><strong>Technical stack:</strong> GitBook, GitHub Actions, Stoplight, Confluence, Markdown, Git, Postman, OpenAPI, CI/CD pipelines, AI automation, prompt engineering, Claude Code, ChatGPT, Custom GPT, Aha!, n8n, Vercel, Crowdin, YAML, Miro, Mermaid diagram, Agile methodologies, Jira</p>
 {{% /collapse %}}
 
 ### Technical Writer

@@ -40,6 +40,10 @@ Skip when: checking site-wide terminology or consistency across pages (that's `s
 
 4. **Check the shared-voice rules:** contractions ("don't," "you're"), not formal language; explained through real personal experience, not the abstract; image alt text that's actually descriptive, never generic.
 
+   **Never claim more experience than the post actually shows.** Phrasings like "the one I see skipped most," "teams usually," or "in my experience people tend to" assert a pattern observed across many projects. When a post draws on one project, the honest framing is an opinion ("the one I think matters most, whatever the tool"), not a survey of what others do. This applies to suggested fixes too, not just the author's draft: the "real personal experience" rule above means grounding in experience the author *has*, and inventing observed-pattern claims to make a bridge sentence land is the failure mode to avoid.
+
+   **A closing argument is allowed to generalize.** The personal-experience rule governs how a post explains and earns its points along the way, not whether the ending must name a specific project. A closing that states a principle can stand on its own, and tying it back to a named project is optional. Offer that grounding only if the argument itself is weak, treat it as one option rather than a required fix, and drop it once the author says they want the ending to read as a principle. The bar for a closing is that the argument lands, not that it cites a project.
+
 5. **Report the review** using the Output format below. Suggest one small fix per problem — a merge, a reorder, a cut — not a full rewrite. If it's a bigger call (like which detail to lead with), flag it and let the author decide.
 
 6. **Fold in corrections.** If the author corrects something this skill said, that correction becomes the new rule going forward — update this file's post-type or shared-voice notes so the same miss doesn't happen next time, rather than applying the fix just once.
