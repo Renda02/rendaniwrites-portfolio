@@ -36,6 +36,7 @@ Skip when: checking site-wide terminology or consistency across pages (that's `s
 3. **Check post-type traits.**
    - **Explainer posts** (like "How Git works"): open with a question the reader's probably already asking; read like "here's what I learned," not a textbook; end by linking to a related post; close with short, plain sentences.
    - **Personal story posts** (like "How I became a solo technical writer"): the story itself pulls the reader in, no question needed to open; the single strongest detail gets its own moment, not buried in a longer paragraph; if naming people at the end, bridge back to the point first so it doesn't read as a random list; the lesson is the literal last line, nothing after it.
+   - **Personal workflow posts** (like "How I built an AI playbook" or "How voice dictation improved my AI workflow"): open on a moment the reader recognizes, in "you" voice, not a question or a story; give the reason (the "why") before the steps, so the steps read as the answer to it; include at least one example from the author's own practice that pays off the idea; end on a single try-it line that echoes the opening, nothing after it. The goal is usually convert, and the "why" section counts as what the reader needs to act, not as a second educate goal.
    - If a draft is a new type that isn't either of these, don't force it into one of these patterns — flag it as new and work out its own rules from the real draft.
 
 4. **Check the shared-voice rules:** contractions ("don't," "you're"), not formal language; explained through real personal experience, not the abstract; image alt text that's actually descriptive, never generic.
@@ -51,14 +52,14 @@ Skip when: checking site-wide terminology or consistency across pages (that's `s
 ## Inputs
 
 - The blog draft being reviewed, from `content/blog/*.md`.
-- Other posts already in `content/blog/`, for matching against the explainer/personal-story patterns above (or spotting a genuinely new post type).
+- Other posts already in `content/blog/`, for matching against the explainer/personal-story/personal-workflow patterns above (or spotting a genuinely new post type).
 
 ## Outputs
 
 A review report in this exact shape:
 
 ```
-Post type: [explainer / personal story / new type: say what's different]
+Post type: [explainer / personal story / personal workflow / new type: say what's different]
 Goal: [inform / educate / convert / mixed: flag if it's doing more than one]
 
 1. Outcome up front: [strong / weak] - [where]
