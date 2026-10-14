@@ -1,54 +1,39 @@
 ---
 date: 2026-09-28
 draft: true
-title: "How voice dictation improved my AI workflow"
+title: "Why I use voice dictation instead of typing rough ideas into AI"
 description: "How voice dictation lets me explain ideas to AI without filtering what I include."
 tags: ["ai", "productivity", "voice-dictation"]
 ---
 
-Think about the last time you explained a project to a friend or a colleague. You didn't plan what to include. It just came out: the background, the reasoning, the small details that made the thing make sense.
+When you brainstorm a solution with a colleague or explain one to them, the background and the reasons come out on their own. But if you do the same by typing into an AI assistant, you decide halfway through the text that a detail isn't worth typing, then spend the next few messages feeding the assistant what's missing.
 
-Now think about the last time you typed the same thing into an AI assistant like ChatGPT or Claude. While typing, you quietly decided what mattered enough to include. Not on purpose, but because you just assumed some of it didn't need saying.
+With voice dictation, you talk through your thoughts in real time without filtering them, and more of the context reaches the assistant the first time.
 
-Voice dictation is how I get back to that first version: explaining something the way I actually would, out loud.
+## Why typing filters context
 
----
+People speak at about 125 words per minute. When copying text, the average computer user types about 33 words per minute. When composing, thinking and typing at the same time, that drops to about 19 words per minute.
 
-## Why typing is slower
+So you speak nearly four times faster than you copy, and more than six times faster than you compose.
 
-In everyday conversation, you speak at around 125 to 150 words per minute. When copying text, the average computer user types about 33 words per minute. When composing, thinking and typing at the same time, that drops to just 19 words per minute.
-
-You speak more than six times faster than you type. But it's not just about the time.
-
-It's what happens in that gap: the moment when you decide, often without noticing, what's worth typing out and what isn't. Speed is the reason the filtering happens. The filtering is the actual problem.
-
----
+The gap is where you decide, often without noticing, what's worth typing out and what isn't. The filtering is the real cost.
 
 ## When I use voice dictation
 
-I often use dictation in situations like these:
+I switch to voice when I'm still thinking something through, like when:
 
 - An idea hits while I'm working, and I need to brainstorm it before I lose it.
-- I'm building context for a project: talking through the plan so I have something to work from.
-- I'm drafting something like a product requirements document (PRD) or a corrective and preventive action (CAPA) report, and I need to explain the scenario: who it's for, what the problem is, and how we'll resolve it.
+- I'm building context for a project and talking through the plan so I have something to work from.
+- I'm drafting a product requirements document (PRD) or a corrective and preventive action (CAPA) report and need to explain the scenario: who it's for, what the problem is, and how we'll resolve it.
 
-I built a study plan by talking through what I wanted to achieve and my timelines.
-
-Typing it out would have meant rewriting the same sentence a few times and still ending up with less than I'd worked out in my head. Instead: a quick raw transcript, a short cleanup, and I had something usable.
-
----
+I built a study plan this way. I talked through what I wanted to achieve and the timeline I had. When I type a plan like that, I tend to trim as I go. With voice, I got the whole plan out without trimming.
 
 ## How I use voice dictation
 
-I dictate into Claude:
+To dictate into Claude:
 
 1. Open a new session, then tap or hold the microphone icon.
-2. Talk through the idea like I'm explaining it to a colleague. No structure, no editing myself mid-sentence, just getting the full thought out while Claude turns it into text.
-3. Ask for a cleanup: "Clean this up and organize it as a [blog post / project brief / plan]."
-4. Review it. Claude handles the messy-to-structured part, and my job is just the final check.
+2. Talk through the idea like you're explaining it to a colleague. No structure, no editing yourself mid-sentence. Get the full thought out and Claude turns it into text.
+3. Review it. Your job is the final check, including any technical terms the transcript misheard.
 
-If you find yourself using the same cleanup prompt for the same formats, you could save it as a skill and run it with a slash command instead of retyping it.
-
----
-
-Next time you're about to type a rough brief or plan into an AI assistant, try talking it through instead. Give it everything you'd tell a colleague, not just the summary that felt worth typing out. It's a small change, but it brings back everything you assumed didn't need saying.
+Next time you're about to type a rough brief or plan into an AI assistant, try talking it through first. Give it everything you'd tell a colleague, not just the summary that felt worth typing out.
