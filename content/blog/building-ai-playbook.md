@@ -24,11 +24,7 @@ You won't get a playbook right the first time. Write the steps, run it, and note
 
 You don't need a dedicated platform. Write the playbook as plain text, then run it anywhere: a chatbot, an agent, a multi-agent system, a Custom GPT, or a Project.
 
----
-
 I built Master Your Message (MYM), an AI playbook for a task I do every day: communicating with stakeholders. It started as my project for Rachel Woods' Think Like an AI Operator Challenge.
-
----
 
 ## Why Master Your Message
 
@@ -45,8 +41,6 @@ I knew what I needed to say. I struggled to structure it for each audience.
 
 MYM stops that rewriting. I answer three questions, and it gives me the right structure for that audience on the first try.
 
----
-
 ## How Master Your Message works
 
 MYM follows the same trigger, inputs, steps, and outputs shape as any playbook. It asks who you're talking to, what you need from them, and how you're sending it. It pushes back if the message is sensitive or outside what a playbook should write.
@@ -54,8 +48,6 @@ MYM follows the same trigger, inputs, steps, and outputs shape as any playbook. 
 Then it matches your answers to a structure: Bottom Line Up Front (BLUF) for executives, or Point-Reason-Example-Point (PREP) for technical recommendations. It drafts the message and checks that the ask appears in the first line or two before handing it back.
 
 You get a message ready to send, plus the framework it chose and why, so you don't have to make the same call twice.
-
----
 
 ## Master Your Message capabilities
 
